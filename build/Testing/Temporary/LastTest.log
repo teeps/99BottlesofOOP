@@ -1,10 +1,10 @@
-Start testing: Dec 10 17:56 GMT
+Start testing: Dec 10 19:35 GMT
 ----------------------------------------------------------
 1/4 Testing: Constructors
 1/4 Test: Constructors
 Command: "/home/mark/Documents/CProjects/99Bottles/build/tests/99BottlesTest" "Constructors"
 Directory: /home/mark/Documents/CProjects/99Bottles/build/tests
-"Constructors" start time: Dec 10 17:56 GMT
+"Constructors" start time: Dec 10 19:35 GMT
 Output:
 ----------------------------------------------------------
 Filters: Constructors
@@ -16,7 +16,7 @@ assertions: - none -
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"Constructors" end time: Dec 10 17:56 GMT
+"Constructors" end time: Dec 10 19:35 GMT
 "Constructors" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -24,7 +24,7 @@ Test Passed.
 2/4 Test: VerseText_2Bottles
 Command: "/home/mark/Documents/CProjects/99Bottles/build/tests/99BottlesTest" "VerseText_2Bottles"
 Directory: /home/mark/Documents/CProjects/99Bottles/build/tests
-"VerseText_2Bottles" start time: Dec 10 17:56 GMT
+"VerseText_2Bottles" start time: Dec 10 19:35 GMT
 Output:
 ----------------------------------------------------------
 Filters: VerseText_2Bottles
@@ -32,10 +32,10 @@ Filters: VerseText_2Bottles
 All tests passed (1 assertion in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"VerseText_2Bottles" end time: Dec 10 17:56 GMT
+"VerseText_2Bottles" end time: Dec 10 19:35 GMT
 "VerseText_2Bottles" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -43,7 +43,7 @@ Test Passed.
 3/4 Test: VerseText_1Bottles
 Command: "/home/mark/Documents/CProjects/99Bottles/build/tests/99BottlesTest" "VerseText_1Bottles"
 Directory: /home/mark/Documents/CProjects/99Bottles/build/tests
-"VerseText_1Bottles" start time: Dec 10 17:56 GMT
+"VerseText_1Bottles" start time: Dec 10 19:35 GMT
 Output:
 ----------------------------------------------------------
 Filters: VerseText_1Bottles
@@ -54,7 +54,7 @@ All tests passed (1 assertion in 1 test case)
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"VerseText_1Bottles" end time: Dec 10 17:56 GMT
+"VerseText_1Bottles" end time: Dec 10 19:35 GMT
 "VerseText_1Bottles" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -62,7 +62,7 @@ Test Passed.
 4/4 Test: VerseText_0Bottles
 Command: "/home/mark/Documents/CProjects/99Bottles/build/tests/99BottlesTest" "VerseText_0Bottles"
 Directory: /home/mark/Documents/CProjects/99Bottles/build/tests
-"VerseText_0Bottles" start time: Dec 10 17:56 GMT
+"VerseText_0Bottles" start time: Dec 10 19:35 GMT
 Output:
 ----------------------------------------------------------
 Filters: VerseText_0Bottles
@@ -73,8 +73,8 @@ All tests passed (1 assertion in 1 test case)
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"VerseText_0Bottles" end time: Dec 10 17:56 GMT
+"VerseText_0Bottles" end time: Dec 10 19:35 GMT
 "VerseText_0Bottles" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Dec 10 17:56 GMT
+End testing: Dec 10 19:35 GMT

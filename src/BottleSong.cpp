@@ -63,11 +63,12 @@ uint16_t BottleSong::getSuccessor(uint16_t uiIndex)
 std::string BottleSong::verse(uint16_t uiVerse)
 {
     std::stringstream sOutput;
+    BottleNumber botnum(uiVerse);
     //First line
     sOutput << Capitalise (getQuantity (uiVerse)) << " "<< getContainer (uiVerse) << " of beer on the wall, ";
     sOutput << getQuantity (uiVerse) << " " << getContainer (uiVerse) << " of beer.\n";
     //Last line
-    sOutput << getAction(uiVerse) << getQuantity (getSuccessor(uiVerse)) << " " << getContainer(getSuccessor(uiVerse)) << " of beer.\n";
+    sOutput << getAction(uiVerse) << getQuantity (botnum.uiSuccessor()) << " " << getContainer(botnum.uiSuccessor()) << " of beer.\n";
     return sOutput.str();
 }
 
@@ -81,4 +82,15 @@ std::string BottleSong::verses(uint16_t uiHighVerse, uint16_t uiLowVerse)
     }
     sOutput << this->verse(uiLowVerse);
     return sOutput.str();
+}
+
+BottleNumber::BottleNumber(uint16_t uiNewNumber)
+{
+    uiNumber = uiNewNumber;
+    uiMaxVerse = 99;
+}
+
+uint16_t BottleNumber::uiSuccessor()
+{
+    return uiNumber == 0 ? uiMaxVerse : uiNumber - 1;
 }
