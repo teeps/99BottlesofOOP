@@ -1,0 +1,2 @@
+#define 99Bottles_VERSION_MAJOR @99Bottles_VERSION_MAJOR@
+#define 99Bottles_VERSION_MINOR @99Bottles_VERSION_MINOR@
