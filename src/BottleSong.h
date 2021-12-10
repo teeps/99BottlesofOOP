@@ -92,7 +92,7 @@ class BottleNumber
          * @param[in] uint16_t - Verse index
          * @return quantity string
         */
-        std::string Quantity(uint16_t);
+        std::string Quantity(uint16_t uiIndex=1);
         /** @brief Return the correct action (final line) for the given index
          * Moving this into a method rather than a switch statement gives a method which has a single responsiblity and removes the smell of a switch 
          * from the verse method.

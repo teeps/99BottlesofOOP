@@ -31,9 +31,9 @@ std::string BottleSong::getPronoun(uint16_t uiIndex = 2)
 
 std::string BottleSong::getQuantity (uint16_t uiIndex)
 {
-    //Maybe this is not perfect from a single responsibility principal point of view - the method is dealing with the content *and* the capitalisation.
-    std::string RetString = (uiIndex == 0 ? "no more" : std::to_string(uiIndex));
-    return RetString;
+    //Encapsulating this call in getQuantity allows a different verse number to be used (e.g. in the successor lines).  
+    //If we called Quantity directly from verse this would be a problem, we'd probably end up with a 'SuccessorQuantity' method.
+    return BottleNumber(uiIndex).Quantity();
 }
 
 static std::string Capitalise (std::string text)
@@ -57,18 +57,18 @@ std::string BottleSong::getAction(uint16_t uiIndex)
 }
 uint16_t BottleSong::getSuccessor(uint16_t uiIndex)
 {
-    return uiIndex == 0 ? uiMaxVerse : uiIndex - 1;
+    return BottleNumber(uiIndex).uiSuccessor();  //Create an immutable Bottlenumber, then call its uiSuccessor method and return the result.
 }
 
 std::string BottleSong::verse(uint16_t uiVerse)
 {
     std::stringstream sOutput;
-    BottleNumber botnum(uiVerse);
+    
     //First line
-    sOutput << Capitalise (getQuantity (uiVerse)) << " "<< getContainer (uiVerse) << " of beer on the wall, ";
-    sOutput << getQuantity (uiVerse) << " " << getContainer (uiVerse) << " of beer.\n";
+    sOutput << Capitalise (getQuantity(uiVerse)) << " "<< getContainer (uiVerse) << " of beer on the wall, ";
+    sOutput << getQuantity(uiVerse) << " " << getContainer (uiVerse) << " of beer.\n";
     //Last line
-    sOutput << getAction(uiVerse) << getQuantity (botnum.uiSuccessor()) << " " << getContainer(botnum.uiSuccessor()) << " of beer.\n";
+    sOutput << getAction(uiVerse) << getQuantity (getSuccessor(uiVerse)) << " " << getContainer(getSuccessor(uiVerse)) << " of beer.\n";
     return sOutput.str();
 }
 
@@ -93,4 +93,10 @@ BottleNumber::BottleNumber(uint16_t uiNewNumber)
 uint16_t BottleNumber::uiSuccessor()
 {
     return uiNumber == 0 ? uiMaxVerse : uiNumber - 1;
+}
+
+std::string BottleNumber::Quantity(uint16_t uiIndex)
+{
+    std::string RetString = (uiNumber == 0 ? "no more" : std::to_string(uiNumber));
+    return RetString;
 }
