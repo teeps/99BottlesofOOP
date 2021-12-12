@@ -1,3 +1,14 @@
+/** @brief Implementation of 99 Bottles Song as in Sandi Metz's book.
+ * 
+ * @version 0.01 First commit, already coded as far as the end of chapter 4
+ * @version 0.02 Added BottleNumber class (chapter 5)
+ * @version 0.03 Experimented with Capitaliser class of iostream, ultimately abandoned.
+ * 
+ * @todo Remove Data Clumps
+ * @todo Make Successor return a BottleNumber, not a plain number
+ * @todo Implement 'six-pack' functionality
+ * @todo Add tests for BottleNumber class
+ */
 #include "BottleSong.h"
 #include <stdio.h>
 #include <iostream>

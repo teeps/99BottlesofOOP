@@ -1,7 +1,10 @@
+/** @brief Declarations of BottleSong and BottleNumber classes*/
+
 #ifndef BottleSong_H
 #define BottleSong_H
 #include <cstdint>
 #include <iostream>
+
 /** @brief This class creates the 99 bottles song*/
 class BottleSong 
 {
