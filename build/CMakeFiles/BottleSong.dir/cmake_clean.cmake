@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/BottleSong.dir/src/BottleSong.cpp.o"
+  "CMakeFiles/BottleSong.dir/BottleSong/BottleSong.cpp.o"
   "libBottleSong.a"
   "libBottleSong.pdb"
 )

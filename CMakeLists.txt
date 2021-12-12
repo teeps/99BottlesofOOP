@@ -15,13 +15,15 @@ set(TARGET_NAME "99Bottles")
 
 #Set project source directory
 set(PROJECT_SOURCE_DIR 
-        "${CMAKE_CURRENT_SOURCE_DIR}/src")
+        "${CMAKE_CURRENT_SOURCE_DIR}/BottleSong")
 
 set(PROJECT_BINARY_DIR
         "${CMAKE_CURRENT_SOURCE_DIR}/build")
 
 #Modules
 add_library (BottleSong ${PROJECT_SOURCE_DIR}/BottleSong.cpp)
+add_library (Capitaliser ${PROJECT_SOURCE_DIR}/../Capitaliser/Capitaliser.cpp)
+
 #add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/../Catch2")
 #add the executable
 

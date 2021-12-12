@@ -1,13 +1,23 @@
 [
 {
   "directory": "/home/mark/Documents/CProjects/99Bottles/build",
-  "command": "/bin/x86_64-linux-gnu-g++-10   -g -std=gnu++11 -o CMakeFiles/BottleSong.dir/src/BottleSong.cpp.o -c /home/mark/Documents/CProjects/99Bottles/src/BottleSong.cpp",
-  "file": "/home/mark/Documents/CProjects/99Bottles/src/BottleSong.cpp"
+  "command": "/bin/x86_64-linux-gnu-g++-10   -g -std=gnu++11 -o CMakeFiles/BottleSong.dir/BottleSong/BottleSong.cpp.o -c /home/mark/Documents/CProjects/99Bottles/BottleSong/BottleSong.cpp",
+  "file": "/home/mark/Documents/CProjects/99Bottles/BottleSong/BottleSong.cpp"
 },
 {
   "directory": "/home/mark/Documents/CProjects/99Bottles/build",
-  "command": "/bin/x86_64-linux-gnu-g++-10 -DTEST_DATA_PATH=\\\"/home/mark/Documents/CProjects/99Bottles/src/data\\\" -I/home/mark/Documents/CProjects/99Bottles/src -g -std=gnu++11 -o CMakeFiles/99Bottles.dir/src/99bottles.cpp.o -c /home/mark/Documents/CProjects/99Bottles/src/99bottles.cpp",
-  "file": "/home/mark/Documents/CProjects/99Bottles/src/99bottles.cpp"
+  "command": "/bin/x86_64-linux-gnu-g++-10 -DTEST_DATA_PATH=\\\"/home/mark/Documents/CProjects/99Bottles/BottleSong/data\\\" -I/home/mark/Documents/CProjects/99Bottles/src -g -std=gnu++11 -o CMakeFiles/99Bottles.dir/BottleSong/99bottles.cpp.o -c /home/mark/Documents/CProjects/99Bottles/BottleSong/99bottles.cpp",
+  "file": "/home/mark/Documents/CProjects/99Bottles/BottleSong/99bottles.cpp"
+},
+{
+  "directory": "/home/mark/Documents/CProjects/99Bottles/build",
+  "command": "/bin/x86_64-linux-gnu-g++-10   -g -std=gnu++11 -o CMakeFiles/Capitaliser.dir/Capitaliser/Capitaliser.cpp.o -c /home/mark/Documents/CProjects/99Bottles/Capitaliser/Capitaliser.cpp",
+  "file": "/home/mark/Documents/CProjects/99Bottles/Capitaliser/Capitaliser.cpp"
+},
+{
+  "directory": "/home/mark/Documents/CProjects/99Bottles/build/tests",
+  "command": "/bin/x86_64-linux-gnu-g++-10   -g -std=gnu++14 -o CMakeFiles/99BottlesTest.dir/CapitaliserTests.cpp.o -c /home/mark/Documents/CProjects/99Bottles/tests/CapitaliserTests.cpp",
+  "file": "/home/mark/Documents/CProjects/99Bottles/tests/CapitaliserTests.cpp"
 },
 {
   "directory": "/home/mark/Documents/CProjects/99Bottles/build/tests",

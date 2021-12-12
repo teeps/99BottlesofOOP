@@ -1,3 +1,5 @@
+add_test( [==[Capitaliser can Stream In and Out]==] /home/mark/Documents/CProjects/99Bottles/build/tests/99BottlesTest [==[Capitaliser can Stream In and Out]==]  )
+set_tests_properties( [==[Capitaliser can Stream In and Out]==] PROPERTIES WORKING_DIRECTORY /home/mark/Documents/CProjects/99Bottles/build/tests)
 add_test( Constructors /home/mark/Documents/CProjects/99Bottles/build/tests/99BottlesTest Constructors  )
 set_tests_properties( Constructors PROPERTIES WORKING_DIRECTORY /home/mark/Documents/CProjects/99Bottles/build/tests)
 add_test( VerseText_2Bottles /home/mark/Documents/CProjects/99Bottles/build/tests/99BottlesTest VerseText_2Bottles  )
@@ -6,4 +8,4 @@ add_test( VerseText_1Bottles /home/mark/Documents/CProjects/99Bottles/build/test
 set_tests_properties( VerseText_1Bottles PROPERTIES WORKING_DIRECTORY /home/mark/Documents/CProjects/99Bottles/build/tests)
 add_test( VerseText_0Bottles /home/mark/Documents/CProjects/99Bottles/build/tests/99BottlesTest VerseText_0Bottles  )
 set_tests_properties( VerseText_0Bottles PROPERTIES WORKING_DIRECTORY /home/mark/Documents/CProjects/99Bottles/build/tests)
-set( 99BottlesTest_TESTS Constructors VerseText_2Bottles VerseText_1Bottles VerseText_0Bottles)
+set( 99BottlesTest_TESTS [==[Capitaliser can Stream In and Out]==] Constructors VerseText_2Bottles VerseText_1Bottles VerseText_0Bottles)

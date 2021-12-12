@@ -1,7 +1,7 @@
 /** Catch2 tests for 99 Bottles Song Class*/
 
 #include "catch.hpp"
-#include "../src/BottleSong.h"
+#include "../BottleSong/BottleSong.h"
 #include <string>
 
 TEST_CASE ( "Constructors") 

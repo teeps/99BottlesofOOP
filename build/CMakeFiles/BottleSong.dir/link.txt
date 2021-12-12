@@ -1,2 +1,2 @@
-/bin/x86_64-linux-gnu-ar qc libBottleSong.a CMakeFiles/BottleSong.dir/src/BottleSong.cpp.o
+/bin/x86_64-linux-gnu-ar qc libBottleSong.a CMakeFiles/BottleSong.dir/BottleSong/BottleSong.cpp.o
 /bin/x86_64-linux-gnu-ranlib libBottleSong.a

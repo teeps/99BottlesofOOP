@@ -76,27 +76,27 @@ include CMakeFiles/BottleSong.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/BottleSong.dir/flags.make
 
-CMakeFiles/BottleSong.dir/src/BottleSong.cpp.o: CMakeFiles/BottleSong.dir/flags.make
-CMakeFiles/BottleSong.dir/src/BottleSong.cpp.o: ../src/BottleSong.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mark/Documents/CProjects/99Bottles/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/BottleSong.dir/src/BottleSong.cpp.o"
-	/bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BottleSong.dir/src/BottleSong.cpp.o -c /home/mark/Documents/CProjects/99Bottles/src/BottleSong.cpp
+CMakeFiles/BottleSong.dir/BottleSong/BottleSong.cpp.o: CMakeFiles/BottleSong.dir/flags.make
+CMakeFiles/BottleSong.dir/BottleSong/BottleSong.cpp.o: ../BottleSong/BottleSong.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mark/Documents/CProjects/99Bottles/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/BottleSong.dir/BottleSong/BottleSong.cpp.o"
+	/bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BottleSong.dir/BottleSong/BottleSong.cpp.o -c /home/mark/Documents/CProjects/99Bottles/BottleSong/BottleSong.cpp
 
-CMakeFiles/BottleSong.dir/src/BottleSong.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BottleSong.dir/src/BottleSong.cpp.i"
-	/bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mark/Documents/CProjects/99Bottles/src/BottleSong.cpp > CMakeFiles/BottleSong.dir/src/BottleSong.cpp.i
+CMakeFiles/BottleSong.dir/BottleSong/BottleSong.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BottleSong.dir/BottleSong/BottleSong.cpp.i"
+	/bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mark/Documents/CProjects/99Bottles/BottleSong/BottleSong.cpp > CMakeFiles/BottleSong.dir/BottleSong/BottleSong.cpp.i
 
-CMakeFiles/BottleSong.dir/src/BottleSong.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BottleSong.dir/src/BottleSong.cpp.s"
-	/bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mark/Documents/CProjects/99Bottles/src/BottleSong.cpp -o CMakeFiles/BottleSong.dir/src/BottleSong.cpp.s
+CMakeFiles/BottleSong.dir/BottleSong/BottleSong.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BottleSong.dir/BottleSong/BottleSong.cpp.s"
+	/bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mark/Documents/CProjects/99Bottles/BottleSong/BottleSong.cpp -o CMakeFiles/BottleSong.dir/BottleSong/BottleSong.cpp.s
 
 # Object files for target BottleSong
 BottleSong_OBJECTS = \
-"CMakeFiles/BottleSong.dir/src/BottleSong.cpp.o"
+"CMakeFiles/BottleSong.dir/BottleSong/BottleSong.cpp.o"
 
 # External object files for target BottleSong
 BottleSong_EXTERNAL_OBJECTS =
 
-libBottleSong.a: CMakeFiles/BottleSong.dir/src/BottleSong.cpp.o
+libBottleSong.a: CMakeFiles/BottleSong.dir/BottleSong/BottleSong.cpp.o
 libBottleSong.a: CMakeFiles/BottleSong.dir/build.make
 libBottleSong.a: CMakeFiles/BottleSong.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mark/Documents/CProjects/99Bottles/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libBottleSong.a"

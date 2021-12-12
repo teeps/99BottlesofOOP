@@ -155,6 +155,33 @@ tests/CMakeFiles/99BottlesTest.dir/rule:
 	cd /home/mark/Documents/CProjects/99Bottles/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/99BottlesTest.dir/build.make tests/CMakeFiles/99BottlesTest.dir/build
 .PHONY : 99BottlesTest/fast
 
+CapitaliserTests.o: CapitaliserTests.cpp.o
+
+.PHONY : CapitaliserTests.o
+
+# target to build an object file
+CapitaliserTests.cpp.o:
+	cd /home/mark/Documents/CProjects/99Bottles/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/99BottlesTest.dir/build.make tests/CMakeFiles/99BottlesTest.dir/CapitaliserTests.cpp.o
+.PHONY : CapitaliserTests.cpp.o
+
+CapitaliserTests.i: CapitaliserTests.cpp.i
+
+.PHONY : CapitaliserTests.i
+
+# target to preprocess a source file
+CapitaliserTests.cpp.i:
+	cd /home/mark/Documents/CProjects/99Bottles/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/99BottlesTest.dir/build.make tests/CMakeFiles/99BottlesTest.dir/CapitaliserTests.cpp.i
+.PHONY : CapitaliserTests.cpp.i
+
+CapitaliserTests.s: CapitaliserTests.cpp.s
+
+.PHONY : CapitaliserTests.s
+
+# target to generate assembly for a file
+CapitaliserTests.cpp.s:
+	cd /home/mark/Documents/CProjects/99Bottles/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/99BottlesTest.dir/build.make tests/CMakeFiles/99BottlesTest.dir/CapitaliserTests.cpp.s
+.PHONY : CapitaliserTests.cpp.s
+
 tests.o: tests.cpp.o
 
 .PHONY : tests.o
@@ -219,6 +246,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... 99BottlesTest"
+	@echo "... CapitaliserTests.o"
+	@echo "... CapitaliserTests.i"
+	@echo "... CapitaliserTests.s"
 	@echo "... tests.o"
 	@echo "... tests.i"
 	@echo "... tests.s"

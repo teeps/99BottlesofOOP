@@ -16,6 +16,7 @@ target_link_libraries(${TARGET_TEST}
     PRIVATE
     Catch2::Catch2
     BottleSong
+    Capitaliser
 )
 include(CTest)
 include(Catch)

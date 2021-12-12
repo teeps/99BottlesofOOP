@@ -6,10 +6,22 @@
 
 #IncludeRegexTransform: 
 
-/home/mark/Documents/CProjects/99Bottles/src/BottleSong.h
-cstdint
+/home/mark/Documents/CProjects/99Bottles/Capitaliser/Capitaliser.h
+iostream
+-
+sstream
+-
+
+/home/mark/Documents/CProjects/99Bottles/tests/CapitaliserTests.cpp
+catch.hpp
+/home/mark/Documents/CProjects/99Bottles/tests/catch.hpp
+../Capitaliser/Capitaliser.h
+/home/mark/Documents/CProjects/99Bottles/Capitaliser/Capitaliser.h
+string
 -
 iostream
+-
+sstream
 -
 
 /home/mark/Documents/CProjects/99Bottles/tests/catch.hpp
@@ -604,13 +616,5 @@ algorithm
 iomanip
 -
 cassert
--
-
-/home/mark/Documents/CProjects/99Bottles/tests/tests.cpp
-catch.hpp
-/home/mark/Documents/CProjects/99Bottles/tests/catch.hpp
-../src/BottleSong.h
-/home/mark/Documents/CProjects/99Bottles/src/BottleSong.h
-string
 -
 

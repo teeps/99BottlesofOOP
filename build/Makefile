@@ -154,19 +154,6 @@ ContinuousSubmit/fast:
 .PHONY : ContinuousSubmit/fast
 
 #=============================================================================
-# Target rules for targets named NightlyMemCheck
-
-# Build rule for target.
-NightlyMemCheck: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NightlyMemCheck
-.PHONY : NightlyMemCheck
-
-# fast build rule for target.
-NightlyMemCheck/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NightlyMemCheck.dir/build.make CMakeFiles/NightlyMemCheck.dir/build
-.PHONY : NightlyMemCheck/fast
-
-#=============================================================================
 # Target rules for targets named ContinuousConfigure
 
 # Build rule for target.
@@ -284,32 +271,6 @@ ExperimentalSubmit/fast:
 .PHONY : ExperimentalSubmit/fast
 
 #=============================================================================
-# Target rules for targets named Experimental
-
-# Build rule for target.
-Experimental: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Experimental
-.PHONY : Experimental
-
-# fast build rule for target.
-Experimental/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Experimental.dir/build.make CMakeFiles/Experimental.dir/build
-.PHONY : Experimental/fast
-
-#=============================================================================
-# Target rules for targets named ContinuousCoverage
-
-# Build rule for target.
-ContinuousCoverage: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ContinuousCoverage
-.PHONY : ContinuousCoverage
-
-# fast build rule for target.
-ContinuousCoverage/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ContinuousCoverage.dir/build.make CMakeFiles/ContinuousCoverage.dir/build
-.PHONY : ContinuousCoverage/fast
-
-#=============================================================================
 # Target rules for targets named ExperimentalConfigure
 
 # Build rule for target.
@@ -386,6 +347,71 @@ NightlyTest/fast:
 99Bottles/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/99Bottles.dir/build.make CMakeFiles/99Bottles.dir/build
 .PHONY : 99Bottles/fast
+
+#=============================================================================
+# Target rules for targets named ContinuousMemCheck
+
+# Build rule for target.
+ContinuousMemCheck: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ContinuousMemCheck
+.PHONY : ContinuousMemCheck
+
+# fast build rule for target.
+ContinuousMemCheck/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ContinuousMemCheck.dir/build.make CMakeFiles/ContinuousMemCheck.dir/build
+.PHONY : ContinuousMemCheck/fast
+
+#=============================================================================
+# Target rules for targets named Capitaliser
+
+# Build rule for target.
+Capitaliser: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Capitaliser
+.PHONY : Capitaliser
+
+# fast build rule for target.
+Capitaliser/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Capitaliser.dir/build.make CMakeFiles/Capitaliser.dir/build
+.PHONY : Capitaliser/fast
+
+#=============================================================================
+# Target rules for targets named ContinuousCoverage
+
+# Build rule for target.
+ContinuousCoverage: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ContinuousCoverage
+.PHONY : ContinuousCoverage
+
+# fast build rule for target.
+ContinuousCoverage/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ContinuousCoverage.dir/build.make CMakeFiles/ContinuousCoverage.dir/build
+.PHONY : ContinuousCoverage/fast
+
+#=============================================================================
+# Target rules for targets named Experimental
+
+# Build rule for target.
+Experimental: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Experimental
+.PHONY : Experimental
+
+# fast build rule for target.
+Experimental/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Experimental.dir/build.make CMakeFiles/Experimental.dir/build
+.PHONY : Experimental/fast
+
+#=============================================================================
+# Target rules for targets named NightlyMemCheck
+
+# Build rule for target.
+NightlyMemCheck: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NightlyMemCheck
+.PHONY : NightlyMemCheck
+
+# fast build rule for target.
+NightlyMemCheck/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NightlyMemCheck.dir/build.make CMakeFiles/NightlyMemCheck.dir/build
+.PHONY : NightlyMemCheck/fast
 
 #=============================================================================
 # Target rules for targets named Nightly
@@ -505,19 +531,6 @@ ContinuousStart/fast:
 .PHONY : ContinuousStart/fast
 
 #=============================================================================
-# Target rules for targets named ContinuousMemCheck
-
-# Build rule for target.
-ContinuousMemCheck: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ContinuousMemCheck
-.PHONY : ContinuousMemCheck
-
-# fast build rule for target.
-ContinuousMemCheck/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ContinuousMemCheck.dir/build.make CMakeFiles/ContinuousMemCheck.dir/build
-.PHONY : ContinuousMemCheck/fast
-
-#=============================================================================
 # Target rules for targets named ContinuousTest
 
 # Build rule for target.
@@ -543,59 +556,86 @@ ContinuousTest/fast:
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/99BottlesTest.dir/build.make tests/CMakeFiles/99BottlesTest.dir/build
 .PHONY : 99BottlesTest/fast
 
-src/99bottles.o: src/99bottles.cpp.o
+BottleSong/99bottles.o: BottleSong/99bottles.cpp.o
 
-.PHONY : src/99bottles.o
-
-# target to build an object file
-src/99bottles.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/99Bottles.dir/build.make CMakeFiles/99Bottles.dir/src/99bottles.cpp.o
-.PHONY : src/99bottles.cpp.o
-
-src/99bottles.i: src/99bottles.cpp.i
-
-.PHONY : src/99bottles.i
-
-# target to preprocess a source file
-src/99bottles.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/99Bottles.dir/build.make CMakeFiles/99Bottles.dir/src/99bottles.cpp.i
-.PHONY : src/99bottles.cpp.i
-
-src/99bottles.s: src/99bottles.cpp.s
-
-.PHONY : src/99bottles.s
-
-# target to generate assembly for a file
-src/99bottles.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/99Bottles.dir/build.make CMakeFiles/99Bottles.dir/src/99bottles.cpp.s
-.PHONY : src/99bottles.cpp.s
-
-src/BottleSong.o: src/BottleSong.cpp.o
-
-.PHONY : src/BottleSong.o
+.PHONY : BottleSong/99bottles.o
 
 # target to build an object file
-src/BottleSong.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BottleSong.dir/build.make CMakeFiles/BottleSong.dir/src/BottleSong.cpp.o
-.PHONY : src/BottleSong.cpp.o
+BottleSong/99bottles.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/99Bottles.dir/build.make CMakeFiles/99Bottles.dir/BottleSong/99bottles.cpp.o
+.PHONY : BottleSong/99bottles.cpp.o
 
-src/BottleSong.i: src/BottleSong.cpp.i
+BottleSong/99bottles.i: BottleSong/99bottles.cpp.i
 
-.PHONY : src/BottleSong.i
+.PHONY : BottleSong/99bottles.i
 
 # target to preprocess a source file
-src/BottleSong.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BottleSong.dir/build.make CMakeFiles/BottleSong.dir/src/BottleSong.cpp.i
-.PHONY : src/BottleSong.cpp.i
+BottleSong/99bottles.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/99Bottles.dir/build.make CMakeFiles/99Bottles.dir/BottleSong/99bottles.cpp.i
+.PHONY : BottleSong/99bottles.cpp.i
 
-src/BottleSong.s: src/BottleSong.cpp.s
+BottleSong/99bottles.s: BottleSong/99bottles.cpp.s
 
-.PHONY : src/BottleSong.s
+.PHONY : BottleSong/99bottles.s
 
 # target to generate assembly for a file
-src/BottleSong.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BottleSong.dir/build.make CMakeFiles/BottleSong.dir/src/BottleSong.cpp.s
-.PHONY : src/BottleSong.cpp.s
+BottleSong/99bottles.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/99Bottles.dir/build.make CMakeFiles/99Bottles.dir/BottleSong/99bottles.cpp.s
+.PHONY : BottleSong/99bottles.cpp.s
+
+BottleSong/BottleSong.o: BottleSong/BottleSong.cpp.o
+
+.PHONY : BottleSong/BottleSong.o
+
+# target to build an object file
+BottleSong/BottleSong.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BottleSong.dir/build.make CMakeFiles/BottleSong.dir/BottleSong/BottleSong.cpp.o
+.PHONY : BottleSong/BottleSong.cpp.o
+
+BottleSong/BottleSong.i: BottleSong/BottleSong.cpp.i
+
+.PHONY : BottleSong/BottleSong.i
+
+# target to preprocess a source file
+BottleSong/BottleSong.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BottleSong.dir/build.make CMakeFiles/BottleSong.dir/BottleSong/BottleSong.cpp.i
+.PHONY : BottleSong/BottleSong.cpp.i
+
+BottleSong/BottleSong.s: BottleSong/BottleSong.cpp.s
+
+.PHONY : BottleSong/BottleSong.s
+
+# target to generate assembly for a file
+BottleSong/BottleSong.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BottleSong.dir/build.make CMakeFiles/BottleSong.dir/BottleSong/BottleSong.cpp.s
+.PHONY : BottleSong/BottleSong.cpp.s
+
+Capitaliser/Capitaliser.o: Capitaliser/Capitaliser.cpp.o
+
+.PHONY : Capitaliser/Capitaliser.o
+
+# target to build an object file
+Capitaliser/Capitaliser.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Capitaliser.dir/build.make CMakeFiles/Capitaliser.dir/Capitaliser/Capitaliser.cpp.o
+.PHONY : Capitaliser/Capitaliser.cpp.o
+
+Capitaliser/Capitaliser.i: Capitaliser/Capitaliser.cpp.i
+
+.PHONY : Capitaliser/Capitaliser.i
+
+# target to preprocess a source file
+Capitaliser/Capitaliser.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Capitaliser.dir/build.make CMakeFiles/Capitaliser.dir/Capitaliser/Capitaliser.cpp.i
+.PHONY : Capitaliser/Capitaliser.cpp.i
+
+Capitaliser/Capitaliser.s: Capitaliser/Capitaliser.cpp.s
+
+.PHONY : Capitaliser/Capitaliser.s
+
+# target to generate assembly for a file
+Capitaliser/Capitaliser.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Capitaliser.dir/build.make CMakeFiles/Capitaliser.dir/Capitaliser/Capitaliser.cpp.s
+.PHONY : Capitaliser/Capitaliser.cpp.s
 
 # Help Target
 help:
@@ -637,12 +677,16 @@ help:
 	@echo "... 99Bottles"
 	@echo "... 99BottlesTest"
 	@echo "... BottleSong"
-	@echo "... src/99bottles.o"
-	@echo "... src/99bottles.i"
-	@echo "... src/99bottles.s"
-	@echo "... src/BottleSong.o"
-	@echo "... src/BottleSong.i"
-	@echo "... src/BottleSong.s"
+	@echo "... Capitaliser"
+	@echo "... BottleSong/99bottles.o"
+	@echo "... BottleSong/99bottles.i"
+	@echo "... BottleSong/99bottles.s"
+	@echo "... BottleSong/BottleSong.o"
+	@echo "... BottleSong/BottleSong.i"
+	@echo "... BottleSong/BottleSong.s"
+	@echo "... Capitaliser/Capitaliser.o"
+	@echo "... Capitaliser/Capitaliser.i"
+	@echo "... Capitaliser/Capitaliser.s"
 .PHONY : help
 
 

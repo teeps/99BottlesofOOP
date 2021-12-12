@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "99BottlesTest"
   "99BottlesTest.pdb"
   "99BottlesTest_tests-b12d07c.cmake"
+  "CMakeFiles/99BottlesTest.dir/CapitaliserTests.cpp.o"
   "CMakeFiles/99BottlesTest.dir/tests.cpp.o"
   "CMakeFiles/99BottlesTest.dir/tests_main.cpp.o"
 )

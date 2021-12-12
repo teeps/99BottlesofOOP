@@ -7,14 +7,32 @@
 99BottlesTest:VerseText_1Bottles 3 0.00596137
 99BottlesTest:VerseText_0Bottles 3 0.00585942
 99BottlesTest_NOT_BUILT-b12d07c 0 0
-Constructors 85 0.00841978
+Constructors 100 0.00822198
 Verse10 37 0.0105682
 Verse9 37 0.00944029
 Verses 37 0.00711759
 VerseText_9Bottles 35 0.00830658
-VerseText_2Bottles 74 0.0057518
-VerseText_1Bottles 66 0.00563595
-VerseText_0Bottles 65 0.00545788
+VerseText_2Bottles 88 0.00582353
+VerseText_1Bottles 80 0.00560994
+VerseText_0Bottles 79 0.0054027
 FailingTest 0 0
 Failure 0 0
+Capitaliser 0 0
+Capitaliser 0 0
+Capitaliser 0 0
+Capitaliser 0 0
+Capitaliser 0 0
+Capitaliser 0 0
+Capitaliser 0 0
+Capitaliser 0 0
+Capitaliser 0 0
+Capitaliser 0 0
+Capitaliser 0 0
+Capitaliser 0 0
+Capitaliser 0 0
+Capitaliser 0 0
+Capitaliser 0 0
+Capitaliser 0 0
+Capitaliser 0 0
+Capitaliser can Stream In and Out 1 0.00833653
 ---
