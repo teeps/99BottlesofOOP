@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Capitaliser.dir/Capitaliser/Capitaliser.cpp.o"
+  "CMakeFiles/Capitaliser.dir/src/Capitaliser/Capitaliser.cpp.o"
   "libCapitaliser.a"
   "libCapitaliser.pdb"
 )

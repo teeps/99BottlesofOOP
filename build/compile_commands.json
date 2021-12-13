@@ -1,18 +1,18 @@
 [
 {
   "directory": "/home/mark/Documents/CProjects/99Bottles/build",
-  "command": "/bin/x86_64-linux-gnu-g++-10   -g -std=gnu++11 -o CMakeFiles/BottleSong.dir/BottleSong/BottleSong.cpp.o -c /home/mark/Documents/CProjects/99Bottles/BottleSong/BottleSong.cpp",
-  "file": "/home/mark/Documents/CProjects/99Bottles/BottleSong/BottleSong.cpp"
+  "command": "/bin/x86_64-linux-gnu-g++-10   -g -std=gnu++11 -o CMakeFiles/BottleSong.dir/src/BottleSong/BottleSong.cpp.o -c /home/mark/Documents/CProjects/99Bottles/src/BottleSong/BottleSong.cpp",
+  "file": "/home/mark/Documents/CProjects/99Bottles/src/BottleSong/BottleSong.cpp"
 },
 {
   "directory": "/home/mark/Documents/CProjects/99Bottles/build",
-  "command": "/bin/x86_64-linux-gnu-g++-10 -DTEST_DATA_PATH=\\\"/home/mark/Documents/CProjects/99Bottles/BottleSong/data\\\" -I/home/mark/Documents/CProjects/99Bottles/src -g -std=gnu++11 -o CMakeFiles/99Bottles.dir/BottleSong/99bottles.cpp.o -c /home/mark/Documents/CProjects/99Bottles/BottleSong/99bottles.cpp",
-  "file": "/home/mark/Documents/CProjects/99Bottles/BottleSong/99bottles.cpp"
+  "command": "/bin/x86_64-linux-gnu-g++-10 -DTEST_DATA_PATH=\\\"src/data\\\" -I/home/mark/Documents/CProjects/99Bottles/src -g -std=gnu++11 -o CMakeFiles/99Bottles.dir/src/99bottles.cpp.o -c /home/mark/Documents/CProjects/99Bottles/src/99bottles.cpp",
+  "file": "/home/mark/Documents/CProjects/99Bottles/src/99bottles.cpp"
 },
 {
   "directory": "/home/mark/Documents/CProjects/99Bottles/build",
-  "command": "/bin/x86_64-linux-gnu-g++-10   -g -std=gnu++11 -o CMakeFiles/Capitaliser.dir/Capitaliser/Capitaliser.cpp.o -c /home/mark/Documents/CProjects/99Bottles/Capitaliser/Capitaliser.cpp",
-  "file": "/home/mark/Documents/CProjects/99Bottles/Capitaliser/Capitaliser.cpp"
+  "command": "/bin/x86_64-linux-gnu-g++-10   -g -std=gnu++11 -o CMakeFiles/Capitaliser.dir/src/Capitaliser/Capitaliser.cpp.o -c /home/mark/Documents/CProjects/99Bottles/src/Capitaliser/Capitaliser.cpp",
+  "file": "/home/mark/Documents/CProjects/99Bottles/src/Capitaliser/Capitaliser.cpp"
 },
 {
   "directory": "/home/mark/Documents/CProjects/99Bottles/build/tests",

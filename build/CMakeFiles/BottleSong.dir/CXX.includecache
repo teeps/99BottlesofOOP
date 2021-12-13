@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/mark/Documents/CProjects/99Bottles/BottleSong/BottleSong.cpp
+/home/mark/Documents/CProjects/99Bottles/src/BottleSong/BottleSong.cpp
 BottleSong.h
-/home/mark/Documents/CProjects/99Bottles/BottleSong/BottleSong.h
+/home/mark/Documents/CProjects/99Bottles/src/BottleSong/BottleSong.h
 stdio.h
 -
 iostream
@@ -16,7 +16,7 @@ iostream
 sstream
 -
 
-/home/mark/Documents/CProjects/99Bottles/BottleSong/BottleSong.h
+/home/mark/Documents/CProjects/99Bottles/src/BottleSong/BottleSong.h
 cstdint
 -
 iostream

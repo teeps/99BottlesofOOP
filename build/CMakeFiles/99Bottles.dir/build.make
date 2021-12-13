@@ -76,28 +76,29 @@ include CMakeFiles/99Bottles.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/99Bottles.dir/flags.make
 
-CMakeFiles/99Bottles.dir/BottleSong/99bottles.cpp.o: CMakeFiles/99Bottles.dir/flags.make
-CMakeFiles/99Bottles.dir/BottleSong/99bottles.cpp.o: ../BottleSong/99bottles.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mark/Documents/CProjects/99Bottles/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/99Bottles.dir/BottleSong/99bottles.cpp.o"
-	/bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/99Bottles.dir/BottleSong/99bottles.cpp.o -c /home/mark/Documents/CProjects/99Bottles/BottleSong/99bottles.cpp
+CMakeFiles/99Bottles.dir/src/99bottles.cpp.o: CMakeFiles/99Bottles.dir/flags.make
+CMakeFiles/99Bottles.dir/src/99bottles.cpp.o: ../src/99bottles.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mark/Documents/CProjects/99Bottles/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/99Bottles.dir/src/99bottles.cpp.o"
+	/bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/99Bottles.dir/src/99bottles.cpp.o -c /home/mark/Documents/CProjects/99Bottles/src/99bottles.cpp
 
-CMakeFiles/99Bottles.dir/BottleSong/99bottles.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/99Bottles.dir/BottleSong/99bottles.cpp.i"
-	/bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mark/Documents/CProjects/99Bottles/BottleSong/99bottles.cpp > CMakeFiles/99Bottles.dir/BottleSong/99bottles.cpp.i
+CMakeFiles/99Bottles.dir/src/99bottles.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/99Bottles.dir/src/99bottles.cpp.i"
+	/bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mark/Documents/CProjects/99Bottles/src/99bottles.cpp > CMakeFiles/99Bottles.dir/src/99bottles.cpp.i
 
-CMakeFiles/99Bottles.dir/BottleSong/99bottles.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/99Bottles.dir/BottleSong/99bottles.cpp.s"
-	/bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mark/Documents/CProjects/99Bottles/BottleSong/99bottles.cpp -o CMakeFiles/99Bottles.dir/BottleSong/99bottles.cpp.s
+CMakeFiles/99Bottles.dir/src/99bottles.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/99Bottles.dir/src/99bottles.cpp.s"
+	/bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mark/Documents/CProjects/99Bottles/src/99bottles.cpp -o CMakeFiles/99Bottles.dir/src/99bottles.cpp.s
 
 # Object files for target 99Bottles
 99Bottles_OBJECTS = \
-"CMakeFiles/99Bottles.dir/BottleSong/99bottles.cpp.o"
+"CMakeFiles/99Bottles.dir/src/99bottles.cpp.o"
 
 # External object files for target 99Bottles
 99Bottles_EXTERNAL_OBJECTS =
 
-99Bottles: CMakeFiles/99Bottles.dir/BottleSong/99bottles.cpp.o
+99Bottles: CMakeFiles/99Bottles.dir/src/99bottles.cpp.o
 99Bottles: CMakeFiles/99Bottles.dir/build.make
+99Bottles: libBottleSong.a
 99Bottles: CMakeFiles/99Bottles.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mark/Documents/CProjects/99Bottles/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable 99Bottles"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/99Bottles.dir/link.txt --verbose=$(VERBOSE)

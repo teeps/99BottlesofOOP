@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/mark/Documents/CProjects/99Bottles/Capitaliser/Capitaliser.cpp
+/home/mark/Documents/CProjects/99Bottles/src/Capitaliser/Capitaliser.cpp
 Capitaliser.h
-/home/mark/Documents/CProjects/99Bottles/Capitaliser/Capitaliser.h
+/home/mark/Documents/CProjects/99Bottles/src/Capitaliser/Capitaliser.h
 
-/home/mark/Documents/CProjects/99Bottles/Capitaliser/Capitaliser.h
+/home/mark/Documents/CProjects/99Bottles/src/Capitaliser/Capitaliser.h
 iostream
 -
 sstream

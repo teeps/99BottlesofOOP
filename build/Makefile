@@ -556,86 +556,86 @@ ContinuousTest/fast:
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/99BottlesTest.dir/build.make tests/CMakeFiles/99BottlesTest.dir/build
 .PHONY : 99BottlesTest/fast
 
-BottleSong/99bottles.o: BottleSong/99bottles.cpp.o
+src/99bottles.o: src/99bottles.cpp.o
 
-.PHONY : BottleSong/99bottles.o
-
-# target to build an object file
-BottleSong/99bottles.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/99Bottles.dir/build.make CMakeFiles/99Bottles.dir/BottleSong/99bottles.cpp.o
-.PHONY : BottleSong/99bottles.cpp.o
-
-BottleSong/99bottles.i: BottleSong/99bottles.cpp.i
-
-.PHONY : BottleSong/99bottles.i
-
-# target to preprocess a source file
-BottleSong/99bottles.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/99Bottles.dir/build.make CMakeFiles/99Bottles.dir/BottleSong/99bottles.cpp.i
-.PHONY : BottleSong/99bottles.cpp.i
-
-BottleSong/99bottles.s: BottleSong/99bottles.cpp.s
-
-.PHONY : BottleSong/99bottles.s
-
-# target to generate assembly for a file
-BottleSong/99bottles.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/99Bottles.dir/build.make CMakeFiles/99Bottles.dir/BottleSong/99bottles.cpp.s
-.PHONY : BottleSong/99bottles.cpp.s
-
-BottleSong/BottleSong.o: BottleSong/BottleSong.cpp.o
-
-.PHONY : BottleSong/BottleSong.o
+.PHONY : src/99bottles.o
 
 # target to build an object file
-BottleSong/BottleSong.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BottleSong.dir/build.make CMakeFiles/BottleSong.dir/BottleSong/BottleSong.cpp.o
-.PHONY : BottleSong/BottleSong.cpp.o
+src/99bottles.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/99Bottles.dir/build.make CMakeFiles/99Bottles.dir/src/99bottles.cpp.o
+.PHONY : src/99bottles.cpp.o
 
-BottleSong/BottleSong.i: BottleSong/BottleSong.cpp.i
+src/99bottles.i: src/99bottles.cpp.i
 
-.PHONY : BottleSong/BottleSong.i
+.PHONY : src/99bottles.i
 
 # target to preprocess a source file
-BottleSong/BottleSong.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BottleSong.dir/build.make CMakeFiles/BottleSong.dir/BottleSong/BottleSong.cpp.i
-.PHONY : BottleSong/BottleSong.cpp.i
+src/99bottles.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/99Bottles.dir/build.make CMakeFiles/99Bottles.dir/src/99bottles.cpp.i
+.PHONY : src/99bottles.cpp.i
 
-BottleSong/BottleSong.s: BottleSong/BottleSong.cpp.s
+src/99bottles.s: src/99bottles.cpp.s
 
-.PHONY : BottleSong/BottleSong.s
+.PHONY : src/99bottles.s
 
 # target to generate assembly for a file
-BottleSong/BottleSong.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BottleSong.dir/build.make CMakeFiles/BottleSong.dir/BottleSong/BottleSong.cpp.s
-.PHONY : BottleSong/BottleSong.cpp.s
+src/99bottles.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/99Bottles.dir/build.make CMakeFiles/99Bottles.dir/src/99bottles.cpp.s
+.PHONY : src/99bottles.cpp.s
 
-Capitaliser/Capitaliser.o: Capitaliser/Capitaliser.cpp.o
+src/BottleSong/BottleSong.o: src/BottleSong/BottleSong.cpp.o
 
-.PHONY : Capitaliser/Capitaliser.o
+.PHONY : src/BottleSong/BottleSong.o
 
 # target to build an object file
-Capitaliser/Capitaliser.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Capitaliser.dir/build.make CMakeFiles/Capitaliser.dir/Capitaliser/Capitaliser.cpp.o
-.PHONY : Capitaliser/Capitaliser.cpp.o
+src/BottleSong/BottleSong.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BottleSong.dir/build.make CMakeFiles/BottleSong.dir/src/BottleSong/BottleSong.cpp.o
+.PHONY : src/BottleSong/BottleSong.cpp.o
 
-Capitaliser/Capitaliser.i: Capitaliser/Capitaliser.cpp.i
+src/BottleSong/BottleSong.i: src/BottleSong/BottleSong.cpp.i
 
-.PHONY : Capitaliser/Capitaliser.i
+.PHONY : src/BottleSong/BottleSong.i
 
 # target to preprocess a source file
-Capitaliser/Capitaliser.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Capitaliser.dir/build.make CMakeFiles/Capitaliser.dir/Capitaliser/Capitaliser.cpp.i
-.PHONY : Capitaliser/Capitaliser.cpp.i
+src/BottleSong/BottleSong.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BottleSong.dir/build.make CMakeFiles/BottleSong.dir/src/BottleSong/BottleSong.cpp.i
+.PHONY : src/BottleSong/BottleSong.cpp.i
 
-Capitaliser/Capitaliser.s: Capitaliser/Capitaliser.cpp.s
+src/BottleSong/BottleSong.s: src/BottleSong/BottleSong.cpp.s
 
-.PHONY : Capitaliser/Capitaliser.s
+.PHONY : src/BottleSong/BottleSong.s
 
 # target to generate assembly for a file
-Capitaliser/Capitaliser.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Capitaliser.dir/build.make CMakeFiles/Capitaliser.dir/Capitaliser/Capitaliser.cpp.s
-.PHONY : Capitaliser/Capitaliser.cpp.s
+src/BottleSong/BottleSong.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BottleSong.dir/build.make CMakeFiles/BottleSong.dir/src/BottleSong/BottleSong.cpp.s
+.PHONY : src/BottleSong/BottleSong.cpp.s
+
+src/Capitaliser/Capitaliser.o: src/Capitaliser/Capitaliser.cpp.o
+
+.PHONY : src/Capitaliser/Capitaliser.o
+
+# target to build an object file
+src/Capitaliser/Capitaliser.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Capitaliser.dir/build.make CMakeFiles/Capitaliser.dir/src/Capitaliser/Capitaliser.cpp.o
+.PHONY : src/Capitaliser/Capitaliser.cpp.o
+
+src/Capitaliser/Capitaliser.i: src/Capitaliser/Capitaliser.cpp.i
+
+.PHONY : src/Capitaliser/Capitaliser.i
+
+# target to preprocess a source file
+src/Capitaliser/Capitaliser.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Capitaliser.dir/build.make CMakeFiles/Capitaliser.dir/src/Capitaliser/Capitaliser.cpp.i
+.PHONY : src/Capitaliser/Capitaliser.cpp.i
+
+src/Capitaliser/Capitaliser.s: src/Capitaliser/Capitaliser.cpp.s
+
+.PHONY : src/Capitaliser/Capitaliser.s
+
+# target to generate assembly for a file
+src/Capitaliser/Capitaliser.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Capitaliser.dir/build.make CMakeFiles/Capitaliser.dir/src/Capitaliser/Capitaliser.cpp.s
+.PHONY : src/Capitaliser/Capitaliser.cpp.s
 
 # Help Target
 help:
@@ -678,15 +678,15 @@ help:
 	@echo "... 99BottlesTest"
 	@echo "... BottleSong"
 	@echo "... Capitaliser"
-	@echo "... BottleSong/99bottles.o"
-	@echo "... BottleSong/99bottles.i"
-	@echo "... BottleSong/99bottles.s"
-	@echo "... BottleSong/BottleSong.o"
-	@echo "... BottleSong/BottleSong.i"
-	@echo "... BottleSong/BottleSong.s"
-	@echo "... Capitaliser/Capitaliser.o"
-	@echo "... Capitaliser/Capitaliser.i"
-	@echo "... Capitaliser/Capitaliser.s"
+	@echo "... src/99bottles.o"
+	@echo "... src/99bottles.i"
+	@echo "... src/99bottles.s"
+	@echo "... src/BottleSong/BottleSong.o"
+	@echo "... src/BottleSong/BottleSong.i"
+	@echo "... src/BottleSong/BottleSong.s"
+	@echo "... src/Capitaliser/Capitaliser.o"
+	@echo "... src/Capitaliser/Capitaliser.i"
+	@echo "... src/Capitaliser/Capitaliser.s"
 .PHONY : help
 
 

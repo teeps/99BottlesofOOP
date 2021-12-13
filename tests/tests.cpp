@@ -2,7 +2,7 @@
 */
 
 #include "catch.hpp"
-#include "../BottleSong/BottleSong.h"
+#include "../src/BottleSong/BottleSong.h"
 #include <string>
 using namespace Catch::Matchers;
 TEST_CASE ( "BottleSong") 

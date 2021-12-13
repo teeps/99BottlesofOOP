@@ -1,7 +1,7 @@
 /** Catch2 tests for Capitaliser Class*/
 
 #include "catch.hpp"
-#include "../Capitaliser/Capitaliser.h"
+#include "../src/Capitaliser/Capitaliser.h"
 #include <string>
 #include <iostream>
 #include <sstream>

@@ -1,2 +1,0 @@
-/bin/x86_64-linux-gnu-ar qc libCountdownSong.a CMakeFiles/CountdownSong.dir/src/countdownsong.cpp.o
-/bin/x86_64-linux-gnu-ranlib libCountdownSong.a

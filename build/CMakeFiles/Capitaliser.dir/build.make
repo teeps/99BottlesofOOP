@@ -76,27 +76,27 @@ include CMakeFiles/Capitaliser.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Capitaliser.dir/flags.make
 
-CMakeFiles/Capitaliser.dir/Capitaliser/Capitaliser.cpp.o: CMakeFiles/Capitaliser.dir/flags.make
-CMakeFiles/Capitaliser.dir/Capitaliser/Capitaliser.cpp.o: ../Capitaliser/Capitaliser.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mark/Documents/CProjects/99Bottles/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Capitaliser.dir/Capitaliser/Capitaliser.cpp.o"
-	/bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Capitaliser.dir/Capitaliser/Capitaliser.cpp.o -c /home/mark/Documents/CProjects/99Bottles/Capitaliser/Capitaliser.cpp
+CMakeFiles/Capitaliser.dir/src/Capitaliser/Capitaliser.cpp.o: CMakeFiles/Capitaliser.dir/flags.make
+CMakeFiles/Capitaliser.dir/src/Capitaliser/Capitaliser.cpp.o: ../src/Capitaliser/Capitaliser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mark/Documents/CProjects/99Bottles/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Capitaliser.dir/src/Capitaliser/Capitaliser.cpp.o"
+	/bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Capitaliser.dir/src/Capitaliser/Capitaliser.cpp.o -c /home/mark/Documents/CProjects/99Bottles/src/Capitaliser/Capitaliser.cpp
 
-CMakeFiles/Capitaliser.dir/Capitaliser/Capitaliser.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Capitaliser.dir/Capitaliser/Capitaliser.cpp.i"
-	/bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mark/Documents/CProjects/99Bottles/Capitaliser/Capitaliser.cpp > CMakeFiles/Capitaliser.dir/Capitaliser/Capitaliser.cpp.i
+CMakeFiles/Capitaliser.dir/src/Capitaliser/Capitaliser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Capitaliser.dir/src/Capitaliser/Capitaliser.cpp.i"
+	/bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mark/Documents/CProjects/99Bottles/src/Capitaliser/Capitaliser.cpp > CMakeFiles/Capitaliser.dir/src/Capitaliser/Capitaliser.cpp.i
 
-CMakeFiles/Capitaliser.dir/Capitaliser/Capitaliser.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Capitaliser.dir/Capitaliser/Capitaliser.cpp.s"
-	/bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mark/Documents/CProjects/99Bottles/Capitaliser/Capitaliser.cpp -o CMakeFiles/Capitaliser.dir/Capitaliser/Capitaliser.cpp.s
+CMakeFiles/Capitaliser.dir/src/Capitaliser/Capitaliser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Capitaliser.dir/src/Capitaliser/Capitaliser.cpp.s"
+	/bin/x86_64-linux-gnu-g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mark/Documents/CProjects/99Bottles/src/Capitaliser/Capitaliser.cpp -o CMakeFiles/Capitaliser.dir/src/Capitaliser/Capitaliser.cpp.s
 
 # Object files for target Capitaliser
 Capitaliser_OBJECTS = \
-"CMakeFiles/Capitaliser.dir/Capitaliser/Capitaliser.cpp.o"
+"CMakeFiles/Capitaliser.dir/src/Capitaliser/Capitaliser.cpp.o"
 
 # External object files for target Capitaliser
 Capitaliser_EXTERNAL_OBJECTS =
 
-libCapitaliser.a: CMakeFiles/Capitaliser.dir/Capitaliser/Capitaliser.cpp.o
+libCapitaliser.a: CMakeFiles/Capitaliser.dir/src/Capitaliser/Capitaliser.cpp.o
 libCapitaliser.a: CMakeFiles/Capitaliser.dir/build.make
 libCapitaliser.a: CMakeFiles/Capitaliser.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mark/Documents/CProjects/99Bottles/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libCapitaliser.a"

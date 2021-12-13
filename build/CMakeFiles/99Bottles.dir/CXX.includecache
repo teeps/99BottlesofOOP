@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/mark/Documents/CProjects/99Bottles/BottleSong/99bottles.cpp
+/home/mark/Documents/CProjects/99Bottles/src/99bottles.cpp
 iostream
 -
-BottleSong.h
-/home/mark/Documents/CProjects/99Bottles/BottleSong/BottleSong.h
+BottleSong/BottleSong.h
+/home/mark/Documents/CProjects/99Bottles/src/BottleSong/BottleSong.h
 
-/home/mark/Documents/CProjects/99Bottles/BottleSong/BottleSong.h
+/home/mark/Documents/CProjects/99Bottles/src/BottleSong/BottleSong.h
 cstdint
 -
 iostream
