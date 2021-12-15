@@ -13,11 +13,12 @@ set(PROJECT_BINARY_DIR
         "${CMAKE_CURRENT_SOURCE_DIR}/build")
 
 #Modules
+add_library (BottleNumber "${PROJECT_SOURCE_DIR}/BottleSong/BottleNumber.cpp")
 add_library (BottleSong "${PROJECT_SOURCE_DIR}/BottleSong/BottleSong.cpp")
-add_library(Capitaliser "${PROJECT_SOURCE_DIR}/Capitaliser/Capitaliser.cpp")
+add_library (Capitaliser "${PROJECT_SOURCE_DIR}/Capitaliser/Capitaliser.cpp")
 #add the executable
 add_executable(99Bottles ${PROJECT_SOURCE_DIR}/99bottles.cpp)
-target_link_libraries(99Bottles BottleSong)
+target_link_libraries(99Bottles BottleSong BottleNumber)
 
 #include directories
 target_include_directories(${TARGET_NAME} PUBLIC 

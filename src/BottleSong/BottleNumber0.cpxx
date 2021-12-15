@@ -1,0 +1,23 @@
+/** @brief Implementation of 99 Bottles Song as in Sandi Metz's book.
+ */
+//#include "BottleNumber0.h"
+#include <stdio.h>
+#include <iostream>
+#include <sstream>
+
+
+BottleNumber0::BottleNumber0(uint16_t uiNewNumber)
+{
+    uiNumber = 0;
+    uiMaxVerse = 99;
+}
+
+std::string BottleNumber0::Quantity() const
+{
+        return "no more";
+}
+
+BottleNumber BottleNumber0::Successor () const
+{
+    return BottleNumber(uiMaxVerse);
+}

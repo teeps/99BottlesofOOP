@@ -6,6 +6,14 @@
 
 #IncludeRegexTransform: 
 
+/home/mark/Documents/CProjects/99Bottles/src/BottleSong/BottleNumber.h
+cstdint
+-
+iostream
+-
+memory
+-
+
 /home/mark/Documents/CProjects/99Bottles/src/BottleSong/BottleSong.cpp
 BottleSong.h
 /home/mark/Documents/CProjects/99Bottles/src/BottleSong/BottleSong.h
@@ -21,4 +29,8 @@ cstdint
 -
 iostream
 -
+memory
+-
+BottleNumber.h
+/home/mark/Documents/CProjects/99Bottles/src/BottleSong/BottleNumber.h
 

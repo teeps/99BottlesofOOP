@@ -130,6 +130,7 @@ tests/99BottlesTest: tests/CMakeFiles/99BottlesTest.dir/tests_main.cpp.o
 tests/99BottlesTest: tests/CMakeFiles/99BottlesTest.dir/build.make
 tests/99BottlesTest: /usr/local/lib/libCatch2.a
 tests/99BottlesTest: libBottleSong.a
+tests/99BottlesTest: libBottleNumber.a
 tests/99BottlesTest: libCapitaliser.a
 tests/99BottlesTest: tests/CMakeFiles/99BottlesTest.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mark/Documents/CProjects/99Bottles/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable 99BottlesTest"

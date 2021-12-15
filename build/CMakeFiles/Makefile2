@@ -75,6 +75,7 @@ CMAKE_BINARY_DIR = /home/mark/Documents/CProjects/99Bottles/build
 all: CMakeFiles/BottleSong.dir/all
 all: CMakeFiles/99Bottles.dir/all
 all: CMakeFiles/Capitaliser.dir/all
+all: CMakeFiles/BottleNumber.dir/all
 all: tests/all
 
 .PHONY : all
@@ -91,14 +92,12 @@ clean: CMakeFiles/ContinuousBuild.dir/clean
 clean: CMakeFiles/NightlyConfigure.dir/clean
 clean: CMakeFiles/NightlyMemoryCheck.dir/clean
 clean: CMakeFiles/ExperimentalTest.dir/clean
-clean: CMakeFiles/ContinuousUpdate.dir/clean
 clean: CMakeFiles/NightlyUpdate.dir/clean
 clean: CMakeFiles/ExperimentalMemCheck.dir/clean
 clean: CMakeFiles/ExperimentalSubmit.dir/clean
 clean: CMakeFiles/ExperimentalConfigure.dir/clean
 clean: CMakeFiles/Continuous.dir/clean
 clean: CMakeFiles/BottleSong.dir/clean
-clean: CMakeFiles/NightlyCoverage.dir/clean
 clean: CMakeFiles/NightlyTest.dir/clean
 clean: CMakeFiles/99Bottles.dir/clean
 clean: CMakeFiles/ContinuousMemCheck.dir/clean
@@ -106,6 +105,9 @@ clean: CMakeFiles/Capitaliser.dir/clean
 clean: CMakeFiles/ContinuousCoverage.dir/clean
 clean: CMakeFiles/Experimental.dir/clean
 clean: CMakeFiles/NightlyMemCheck.dir/clean
+clean: CMakeFiles/ContinuousUpdate.dir/clean
+clean: CMakeFiles/BottleNumber.dir/clean
+clean: CMakeFiles/NightlyCoverage.dir/clean
 clean: CMakeFiles/Nightly.dir/clean
 clean: CMakeFiles/NightlySubmit.dir/clean
 clean: CMakeFiles/NightlyStart.dir/clean
@@ -301,33 +303,6 @@ CMakeFiles/ExperimentalTest.dir/clean:
 .PHONY : CMakeFiles/ExperimentalTest.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/ContinuousUpdate.dir
-
-# All Build rule for target.
-CMakeFiles/ContinuousUpdate.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ContinuousUpdate.dir/build.make CMakeFiles/ContinuousUpdate.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ContinuousUpdate.dir/build.make CMakeFiles/ContinuousUpdate.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mark/Documents/CProjects/99Bottles/build/CMakeFiles --progress-num= "Built target ContinuousUpdate"
-.PHONY : CMakeFiles/ContinuousUpdate.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/ContinuousUpdate.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mark/Documents/CProjects/99Bottles/build/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ContinuousUpdate.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mark/Documents/CProjects/99Bottles/build/CMakeFiles 0
-.PHONY : CMakeFiles/ContinuousUpdate.dir/rule
-
-# Convenience name for target.
-ContinuousUpdate: CMakeFiles/ContinuousUpdate.dir/rule
-
-.PHONY : ContinuousUpdate
-
-# clean rule for target.
-CMakeFiles/ContinuousUpdate.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ContinuousUpdate.dir/build.make CMakeFiles/ContinuousUpdate.dir/clean
-.PHONY : CMakeFiles/ContinuousUpdate.dir/clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/NightlyUpdate.dir
 
 # All Build rule for target.
@@ -469,7 +444,7 @@ CMakeFiles/Continuous.dir/clean:
 CMakeFiles/BottleSong.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BottleSong.dir/build.make CMakeFiles/BottleSong.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BottleSong.dir/build.make CMakeFiles/BottleSong.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mark/Documents/CProjects/99Bottles/build/CMakeFiles --progress-num=7,8 "Built target BottleSong"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mark/Documents/CProjects/99Bottles/build/CMakeFiles --progress-num=9,10 "Built target BottleSong"
 .PHONY : CMakeFiles/BottleSong.dir/all
 
 # Build rule for subdir invocation for target.
@@ -488,33 +463,6 @@ BottleSong: CMakeFiles/BottleSong.dir/rule
 CMakeFiles/BottleSong.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BottleSong.dir/build.make CMakeFiles/BottleSong.dir/clean
 .PHONY : CMakeFiles/BottleSong.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/NightlyCoverage.dir
-
-# All Build rule for target.
-CMakeFiles/NightlyCoverage.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NightlyCoverage.dir/build.make CMakeFiles/NightlyCoverage.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NightlyCoverage.dir/build.make CMakeFiles/NightlyCoverage.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mark/Documents/CProjects/99Bottles/build/CMakeFiles --progress-num= "Built target NightlyCoverage"
-.PHONY : CMakeFiles/NightlyCoverage.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/NightlyCoverage.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mark/Documents/CProjects/99Bottles/build/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/NightlyCoverage.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mark/Documents/CProjects/99Bottles/build/CMakeFiles 0
-.PHONY : CMakeFiles/NightlyCoverage.dir/rule
-
-# Convenience name for target.
-NightlyCoverage: CMakeFiles/NightlyCoverage.dir/rule
-
-.PHONY : NightlyCoverage
-
-# clean rule for target.
-CMakeFiles/NightlyCoverage.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NightlyCoverage.dir/build.make CMakeFiles/NightlyCoverage.dir/clean
-.PHONY : CMakeFiles/NightlyCoverage.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/NightlyTest.dir
@@ -548,6 +496,7 @@ CMakeFiles/NightlyTest.dir/clean:
 
 # All Build rule for target.
 CMakeFiles/99Bottles.dir/all: CMakeFiles/BottleSong.dir/all
+CMakeFiles/99Bottles.dir/all: CMakeFiles/BottleNumber.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/99Bottles.dir/build.make CMakeFiles/99Bottles.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/99Bottles.dir/build.make CMakeFiles/99Bottles.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mark/Documents/CProjects/99Bottles/build/CMakeFiles --progress-num=1,2 "Built target 99Bottles"
@@ -555,7 +504,7 @@ CMakeFiles/99Bottles.dir/all: CMakeFiles/BottleSong.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/99Bottles.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mark/Documents/CProjects/99Bottles/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mark/Documents/CProjects/99Bottles/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/99Bottles.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mark/Documents/CProjects/99Bottles/build/CMakeFiles 0
 .PHONY : CMakeFiles/99Bottles.dir/rule
@@ -604,7 +553,7 @@ CMakeFiles/ContinuousMemCheck.dir/clean:
 CMakeFiles/Capitaliser.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Capitaliser.dir/build.make CMakeFiles/Capitaliser.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Capitaliser.dir/build.make CMakeFiles/Capitaliser.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mark/Documents/CProjects/99Bottles/build/CMakeFiles --progress-num=9,10 "Built target Capitaliser"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mark/Documents/CProjects/99Bottles/build/CMakeFiles --progress-num=11,12 "Built target Capitaliser"
 .PHONY : CMakeFiles/Capitaliser.dir/all
 
 # Build rule for subdir invocation for target.
@@ -704,6 +653,87 @@ NightlyMemCheck: CMakeFiles/NightlyMemCheck.dir/rule
 CMakeFiles/NightlyMemCheck.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NightlyMemCheck.dir/build.make CMakeFiles/NightlyMemCheck.dir/clean
 .PHONY : CMakeFiles/NightlyMemCheck.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ContinuousUpdate.dir
+
+# All Build rule for target.
+CMakeFiles/ContinuousUpdate.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ContinuousUpdate.dir/build.make CMakeFiles/ContinuousUpdate.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ContinuousUpdate.dir/build.make CMakeFiles/ContinuousUpdate.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mark/Documents/CProjects/99Bottles/build/CMakeFiles --progress-num= "Built target ContinuousUpdate"
+.PHONY : CMakeFiles/ContinuousUpdate.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ContinuousUpdate.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mark/Documents/CProjects/99Bottles/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ContinuousUpdate.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mark/Documents/CProjects/99Bottles/build/CMakeFiles 0
+.PHONY : CMakeFiles/ContinuousUpdate.dir/rule
+
+# Convenience name for target.
+ContinuousUpdate: CMakeFiles/ContinuousUpdate.dir/rule
+
+.PHONY : ContinuousUpdate
+
+# clean rule for target.
+CMakeFiles/ContinuousUpdate.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ContinuousUpdate.dir/build.make CMakeFiles/ContinuousUpdate.dir/clean
+.PHONY : CMakeFiles/ContinuousUpdate.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/BottleNumber.dir
+
+# All Build rule for target.
+CMakeFiles/BottleNumber.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BottleNumber.dir/build.make CMakeFiles/BottleNumber.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BottleNumber.dir/build.make CMakeFiles/BottleNumber.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mark/Documents/CProjects/99Bottles/build/CMakeFiles --progress-num=7,8 "Built target BottleNumber"
+.PHONY : CMakeFiles/BottleNumber.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/BottleNumber.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mark/Documents/CProjects/99Bottles/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/BottleNumber.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mark/Documents/CProjects/99Bottles/build/CMakeFiles 0
+.PHONY : CMakeFiles/BottleNumber.dir/rule
+
+# Convenience name for target.
+BottleNumber: CMakeFiles/BottleNumber.dir/rule
+
+.PHONY : BottleNumber
+
+# clean rule for target.
+CMakeFiles/BottleNumber.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BottleNumber.dir/build.make CMakeFiles/BottleNumber.dir/clean
+.PHONY : CMakeFiles/BottleNumber.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/NightlyCoverage.dir
+
+# All Build rule for target.
+CMakeFiles/NightlyCoverage.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NightlyCoverage.dir/build.make CMakeFiles/NightlyCoverage.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NightlyCoverage.dir/build.make CMakeFiles/NightlyCoverage.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mark/Documents/CProjects/99Bottles/build/CMakeFiles --progress-num= "Built target NightlyCoverage"
+.PHONY : CMakeFiles/NightlyCoverage.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/NightlyCoverage.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mark/Documents/CProjects/99Bottles/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/NightlyCoverage.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mark/Documents/CProjects/99Bottles/build/CMakeFiles 0
+.PHONY : CMakeFiles/NightlyCoverage.dir/rule
+
+# Convenience name for target.
+NightlyCoverage: CMakeFiles/NightlyCoverage.dir/rule
+
+.PHONY : NightlyCoverage
+
+# clean rule for target.
+CMakeFiles/NightlyCoverage.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NightlyCoverage.dir/build.make CMakeFiles/NightlyCoverage.dir/clean
+.PHONY : CMakeFiles/NightlyCoverage.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/Nightly.dir
@@ -981,6 +1011,7 @@ CMakeFiles/ContinuousTest.dir/clean:
 # All Build rule for target.
 tests/CMakeFiles/99BottlesTest.dir/all: CMakeFiles/BottleSong.dir/all
 tests/CMakeFiles/99BottlesTest.dir/all: CMakeFiles/Capitaliser.dir/all
+tests/CMakeFiles/99BottlesTest.dir/all: CMakeFiles/BottleNumber.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/99BottlesTest.dir/build.make tests/CMakeFiles/99BottlesTest.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/99BottlesTest.dir/build.make tests/CMakeFiles/99BottlesTest.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mark/Documents/CProjects/99Bottles/build/CMakeFiles --progress-num=3,4,5,6 "Built target 99BottlesTest"
@@ -988,7 +1019,7 @@ tests/CMakeFiles/99BottlesTest.dir/all: CMakeFiles/Capitaliser.dir/all
 
 # Build rule for subdir invocation for target.
 tests/CMakeFiles/99BottlesTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mark/Documents/CProjects/99Bottles/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mark/Documents/CProjects/99Bottles/build/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/99BottlesTest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mark/Documents/CProjects/99Bottles/build/CMakeFiles 0
 .PHONY : tests/CMakeFiles/99BottlesTest.dir/rule
