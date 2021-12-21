@@ -15,8 +15,13 @@ class BottleNumber
         static std::unique_ptr<BottleNumber> For(const uint16_t uiNew);
         /** @brief Method tp register a sub-class with the factory*/
         static void Register(const uint16_t uiNew);
-        /** @brief CreateMethod for Factory*/
+        /** Can't have a virtual function in the base class for this as it has to be static in the sub-classes.  This means the sub classes all differ in interface
+         * from the base class, which seems wrong.  Perhaps it would be an idea to have the sub-classes also inherit from some other abstract class that defines the 
+         * CreateMethod?
+        */
         //virtual std::unique_ptr<BottleNumber> CreateMethod();
+        /** @brief The CreateMethod is included here but deleted*/
+        static std::unique_ptr<BottleNumber> CreateMethod() = delete;
         
         /** @brief Constructor
          * @param[in] uint16_t - the number of this instance*/

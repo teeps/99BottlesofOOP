@@ -6,8 +6,16 @@
 #include "../src/BottleSong/BottleNumberFactory.h"
 #include <string>
 using namespace Catch::Matchers;
+void vInitFactory()
+{
+  BottleNumberFactory * pFactory = BottleNumberFactory::Instance();
+  static bool b0Registered = BottleNumberFactory::Register(0,BottleNumber0::CreateMethod);
+  static bool b1Registered = BottleNumberFactory::Register(1,BottleNumber1::CreateMethod);
+  static bool b6Registered = BottleNumberFactory::Register(6,BottleNumber6::CreateMethod);
+}
 TEST_CASE ( "BottleSong") 
 {
+  vInitFactory();
   SECTION ("Constructors")
   {
     const char * cVerseTemplate = "This is verse ${number}.\n";
@@ -60,6 +68,7 @@ TEST_CASE ( "BottleSong")
 
 TEST_CASE ("BottleNumber")
 {
+  vInitFactory();
   SECTION ("Six Pack")
   {
     const char * expected = "six-pack";
@@ -78,37 +87,5 @@ TEST_CASE ("BottleNumber")
   {
     std::unique_ptr<BottleNumber> bottleNumber = BottleNumber::For(6);
     REQUIRE_THAT(bottleNumber->Quantity(), Equals ("1") );
-  }
-}
-
-TEST_CASE("Factory")
-{
-  SECTION ("RegistrationAndCreation")
-  {
-    /* REQUIRE(BottleNumberFactory::Register(0,BottleNumber0::CreateMethod));
-    REQUIRE(BottleNumberFactory::Register(1,BottleNumber1::CreateMethod));
-    REQUIRE(BottleNumberFactory::Register(6,BottleNumber6::CreateMethod));
-    REQUIRE(BottleNumberFactory::Register(6,BottleNumber6::CreateMethod)==0);  //Second time can't be added */
-
-    std::unique_ptr<BottleNumber> Bottle99 = BottleNumberFactory::Create(99);
-    REQUIRE (Bottle99 != nullptr);
-    const char* expect99 = "99 bottles";
-    REQUIRE_THAT(Bottle99->str(), Equals(expect99));
-
-    std::unique_ptr<BottleNumber> Bottle0 = BottleNumberFactory::Create(0);
-    REQUIRE (Bottle0 != nullptr);
-    const char* expect0 = "no more bottles";
-    REQUIRE_THAT(Bottle0->str(), Equals(expect0));
-
-    std::unique_ptr<BottleNumber> Bottle1 = BottleNumberFactory::Create(1);
-    REQUIRE (Bottle1 != nullptr);
-    const char* expect1 = "1 bottle";
-    REQUIRE_THAT(Bottle1->str(), Equals(expect1));
-
-    std::unique_ptr<BottleNumber> Bottle6 = BottleNumberFactory::Create(6);
-    REQUIRE (Bottle6 != nullptr);
-    const char* expect6 = "1 six-pack";
-    REQUIRE_THAT(Bottle6->str(), Equals(expect6));
-
   }
 }

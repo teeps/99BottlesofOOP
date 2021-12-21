@@ -36,19 +36,10 @@ Capitaliser 0 0
 Capitaliser 0 0
 Capitaliser 0 0
 Capitaliser 0 0
-BottleSong 46 0.00536849
+BottleSong 52 0.00545299
 Capitaliser 0 0
 Capitaliser 0 0
-BottleNumber 20 0.00556034
-Capitaliser 0 0
-Capitaliser 0 0
-Capitaliser 0 0
-Capitaliser 0 0
-Capitaliser 0 0
-Capitaliser 0 0
-Capitaliser 0 0
-Capitaliser 0 0
-Factory 12 0.00505356
+BottleNumber 26 0.00576165
 Capitaliser 0 0
 Capitaliser 0 0
 Capitaliser 0 0
@@ -57,9 +48,23 @@ Capitaliser 0 0
 Capitaliser 0 0
 Capitaliser 0 0
 Capitaliser 0 0
+Factory 13 0.00499637
 Capitaliser 0 0
 Capitaliser 0 0
 Capitaliser 0 0
-Creating registration for map index 0 0 0
+Capitaliser 0 0
+Capitaliser 0 0
+Capitaliser 0 0
+Capitaliser 0 0
+Capitaliser 0 0
+Capitaliser 0 0
+Capitaliser 0 0
+Capitaliser 0 0
+Creating 0 0
+Capitaliser 0 0
+Capitaliser 0 0
+Capitaliser 0 0
+Capitaliser 0 0
+Capitaliser 0 0
+Capitaliser can Stream In and Out 1 0.00355456
 ---
-Creating registration for map index 0

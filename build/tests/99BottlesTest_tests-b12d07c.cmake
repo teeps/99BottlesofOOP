@@ -4,6 +4,4 @@ add_test( BottleSong /home/mark/Documents/CProjects/99Bottles/build/tests/99Bott
 set_tests_properties( BottleSong PROPERTIES WORKING_DIRECTORY /home/mark/Documents/CProjects/99Bottles/build/tests)
 add_test( BottleNumber /home/mark/Documents/CProjects/99Bottles/build/tests/99BottlesTest BottleNumber  )
 set_tests_properties( BottleNumber PROPERTIES WORKING_DIRECTORY /home/mark/Documents/CProjects/99Bottles/build/tests)
-add_test( Factory /home/mark/Documents/CProjects/99Bottles/build/tests/99BottlesTest Factory  )
-set_tests_properties( Factory PROPERTIES WORKING_DIRECTORY /home/mark/Documents/CProjects/99Bottles/build/tests)
-set( 99BottlesTest_TESTS [==[Capitaliser can Stream In and Out]==] BottleSong BottleNumber Factory)
+set( 99BottlesTest_TESTS [==[Capitaliser can Stream In and Out]==] BottleSong BottleNumber)

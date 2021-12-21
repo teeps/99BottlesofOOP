@@ -19,21 +19,20 @@
 
 BottleSong::BottleSong ()
 {
- VerseTemplate = std::string("");
- bStandardVerse = true;
- /*Register the sub-classes in the factory.  This has to be done after Instancing the Factory to avoid the problem with undefined initialisation 
-  *order of statics.  Once Instanced the rest of the code can happily use the static methods.*/ 
- BottleNumberFactory * pFactory = BottleNumberFactory::Instance();
- static bool b0Registered = BottleNumberFactory::Register(0,BottleNumber0::CreateMethod);
- static bool b1Registered = BottleNumberFactory::Register(1,BottleNumber1::CreateMethod);
- static bool b6Registered = BottleNumberFactory::Register(6,BottleNumber6::CreateMethod);
+    /*Register the sub-classes in the factory.  This has to be done after Instancing the Factory to avoid the problem with undefined initialisation 
+     *order of statics.  Once Instanced the rest of the code can happily use the static methods.
+     *What happens if multiple BottleSongs are created though?  Well, the BottleNumberFactory will only register them the first time, so as long as
+     there's not some other class which is going to make use of the Factory this registration is OK here.  Still feels wrong though as it is not really 
+     the song's job to do this.  So, these lines are moved to application code for now, e.g. in some sort of init sequence*/ 
+    //BottleNumberFactory * pFactory = BottleNumberFactory::Instance();
+    //static bool b0Registered = BottleNumberFactory::Register(0,BottleNumber0::CreateMethod);
+    //static bool b1Registered = BottleNumberFactory::Register(1,BottleNumber1::CreateMethod);
+    //static bool b6Registered = BottleNumberFactory::Register(6,BottleNumber6::CreateMethod);
 
 };
 
 BottleSong::BottleSong(const char * cuiVerse, uint16_t uiMax, uint16_t uiMin)
 {
-    VerseTemplate = std::string(cuiVerse);
-    bStandardVerse = false;
 };
 
 /** @brief Capitalise the first letter of a string
