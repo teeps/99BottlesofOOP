@@ -6,7 +6,8 @@
  * @version 0.04 Removed Data Clumps, made successor return a new BottleNumber.  Up to Chapter 6.2
  * @version 0.05 Implemented BottleNumber Factory
  * @version 0.06 Moved Factory within BottleNumber class
- * @version 0.07 Removed the conditional from Factory and made it a singleton to avoid issues with static variable initialisation order
+ * @version 0.07 Removed the conditional from Factory and made it a singleton to avoid issues with static variable initialisation order.  
+ * Split classes to separate files. 
  * @todo Add tests for BottleNumber class
  */
 #include "BottleSong.h"
