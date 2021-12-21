@@ -6,6 +6,10 @@
 #include <iostream>
 #include <memory>
 #include "BottleNumber.h"
+#include "BottleNumberFactory.h"
+#include "BottleNumber0.h"
+#include "BottleNumber1.h"
+#include "BottleNumber6.h"
 
 /** @brief This class creates the 99 bottles song*/
 class BottleSong 

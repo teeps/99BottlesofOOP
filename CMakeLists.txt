@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.13)
 
 #Project Name
 project(99Bottles VERSION 1.0)
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 17)
 set(TARGET_NAME "99Bottles")
 
 #Set project source directory
@@ -14,11 +14,17 @@ set(PROJECT_BINARY_DIR
 
 #Modules
 add_library (BottleNumber "${PROJECT_SOURCE_DIR}/BottleSong/BottleNumber.cpp")
+add_library (BottleNumber0 "${PROJECT_SOURCE_DIR}/BottleSong/BottleNumber0.cpp")
+add_library (BottleNumber1 "${PROJECT_SOURCE_DIR}/BottleSong/BottleNumber1.cpp")
+add_library (BottleNumber6 "${PROJECT_SOURCE_DIR}/BottleSong/BottleNumber6.cpp")
+add_library (BottleNumberFactory "${PROJECT_SOURCE_DIR}/BottleSong/BottleNumberFactory.cpp")
 add_library (BottleSong "${PROJECT_SOURCE_DIR}/BottleSong/BottleSong.cpp")
 add_library (Capitaliser "${PROJECT_SOURCE_DIR}/Capitaliser/Capitaliser.cpp")
 #add the executable
 add_executable(99Bottles ${PROJECT_SOURCE_DIR}/99bottles.cpp)
-target_link_libraries(99Bottles BottleSong BottleNumber)
+target_link_libraries(99Bottles BottleSong BottleNumber BottleNumber0 BottleNumber1 
+    BottleNumber6
+    BottleNumberFactory)
 
 #include directories
 target_include_directories(${TARGET_NAME} PUBLIC 

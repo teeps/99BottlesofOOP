@@ -6,6 +6,10 @@ tests/CMakeFiles/99BottlesTest.dir/CapitaliserTests.cpp.o: ../tests/CapitaliserT
 tests/CMakeFiles/99BottlesTest.dir/CapitaliserTests.cpp.o: ../tests/catch.hpp
 
 tests/CMakeFiles/99BottlesTest.dir/tests.cpp.o: ../src/BottleSong/BottleNumber.h
+tests/CMakeFiles/99BottlesTest.dir/tests.cpp.o: ../src/BottleSong/BottleNumber0.h
+tests/CMakeFiles/99BottlesTest.dir/tests.cpp.o: ../src/BottleSong/BottleNumber1.h
+tests/CMakeFiles/99BottlesTest.dir/tests.cpp.o: ../src/BottleSong/BottleNumber6.h
+tests/CMakeFiles/99BottlesTest.dir/tests.cpp.o: ../src/BottleSong/BottleNumberFactory.h
 tests/CMakeFiles/99BottlesTest.dir/tests.cpp.o: ../src/BottleSong/BottleSong.h
 tests/CMakeFiles/99BottlesTest.dir/tests.cpp.o: ../tests/catch.hpp
 tests/CMakeFiles/99BottlesTest.dir/tests.cpp.o: ../tests/tests.cpp

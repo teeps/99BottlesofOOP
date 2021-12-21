@@ -17,6 +17,10 @@ target_link_libraries(${TARGET_TEST}
     Catch2::Catch2
     BottleSong
     BottleNumber
+    BottleNumber0
+    BottleNumber1
+    BottleNumber6
+    BottleNumberFactory
     Capitaliser
 )
 include(CTest)

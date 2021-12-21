@@ -2,9 +2,14 @@
  */
 
 #include "BottleNumber.h"
+#include "BottleNumber0.h"
+#include "BottleNumber1.h"
+#include "BottleNumber6.h"
+#include "BottleNumberFactory.h"
 #include <stdio.h>
 #include <iostream>
 #include <sstream>
+#include <map>
 
 uint16_t BottleNumber::uiSuccessor() const
 {
@@ -52,47 +57,14 @@ std::string BottleNumber::Pronoun() const
 
 std::unique_ptr<BottleNumber> BottleNumber::Successor () const
 {
-    BottleNumberFactory Factory;
-    return Factory.BottleNumberFor(uiNumber-1);
-}
-
-std::string BottleNumber0::Quantity() const
-{
-        return "no more";
-}
-
-std::unique_ptr<BottleNumber> BottleNumber0::Successor () const
-{
-    BottleNumberFactory Factory;
-    return Factory.BottleNumberFor(uiMaxVerse);
-}
-
-std::string BottleNumber0::Action() const
-{
-    return "Go to the store and buy some more, ";
-}
-
-//Pronoun and container not needed for BottleNumber0
-
-BottleNumber1::BottleNumber1(/* uint16_t uiNewNumber */)
-{
-    uiNumber =1;
-    uiMaxVerse = 99;
-}
-
-std::string BottleNumber1::Pronoun() const
-{
-    return "it";
-}
-
-std::string BottleNumber1::Container () const
-{
-    return "bottle";
+    return For(uiNumber-1);
 }
 
 std::unique_ptr<BottleNumber> BottleNumber::For(const uint16_t uiNew)
 {
-    switch (uiNew)
+    BottleNumberFactory *pFactory = BottleNumberFactory::Instance();
+    return BottleNumberFactory::Create(uiNew);
+    /*switch (uiNew)
     {
         case 0:
         {
@@ -104,10 +76,15 @@ std::unique_ptr<BottleNumber> BottleNumber::For(const uint16_t uiNew)
             return std::unique_ptr<BottleNumber>( new BottleNumber1());
             break;
         }
+        case 6:
+        {
+            return std::unique_ptr<BottleNumber>( new BottleNumber6());
+            break;
+        }
         default:
         {
             return std::unique_ptr<BottleNumber>( new BottleNumber(uiNew));
             break;
         }
-    }
+    }*/
 }

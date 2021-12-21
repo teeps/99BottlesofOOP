@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mark/Documents/CProjects/99Bottles/src/BottleSong/BottleNumber.h
+cstdint
+-
+iostream
+-
+memory
+-
+
+/home/mark/Documents/CProjects/99Bottles/src/BottleSong/BottleNumberFactory.cpp
+BottleNumberFactory.h
+/home/mark/Documents/CProjects/99Bottles/src/BottleSong/BottleNumberFactory.h
+iostream
+-
+
+/home/mark/Documents/CProjects/99Bottles/src/BottleSong/BottleNumberFactory.h
+map
+-
+BottleNumber.h
+/home/mark/Documents/CProjects/99Bottles/src/BottleSong/BottleNumber.h
+

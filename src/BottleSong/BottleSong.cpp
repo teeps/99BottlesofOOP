@@ -6,8 +6,7 @@
  * @version 0.04 Removed Data Clumps, made successor return a new BottleNumber.  Up to Chapter 6.2
  * @version 0.05 Implemented BottleNumber Factory
  * @version 0.06 Moved Factory within BottleNumber class
- * 
- * @todo Implement 'six-pack' functionality
+ * @version 0.07 Removed the conditional from Factory and made it a singleton to avoid issues with static variable initialisation order
  * @todo Add tests for BottleNumber class
  */
 #include "BottleSong.h"
@@ -15,10 +14,19 @@
 #include <iostream>
 #include <sstream>
 
+//Register with the factory
+
 BottleSong::BottleSong ()
 {
  VerseTemplate = std::string("");
  bStandardVerse = true;
+ /*Register the sub-classes in the factory.  This has to be done after Instancing the Factory to avoid the problem with undefined initialisation 
+  *order of statics.  Once Instanced the rest of the code can happily use the static methods.*/ 
+ BottleNumberFactory * pFactory = BottleNumberFactory::Instance();
+ static bool b0Registered = BottleNumberFactory::Register(0,BottleNumber0::CreateMethod);
+ static bool b1Registered = BottleNumberFactory::Register(1,BottleNumber1::CreateMethod);
+ static bool b6Registered = BottleNumberFactory::Register(6,BottleNumber6::CreateMethod);
+
 };
 
 BottleSong::BottleSong(const char * cuiVerse, uint16_t uiMax, uint16_t uiMin)

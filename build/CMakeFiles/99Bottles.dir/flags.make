@@ -6,5 +6,5 @@ CXX_DEFINES = -DTEST_DATA_PATH=\"src/data\"
 
 CXX_INCLUDES = -I/home/mark/Documents/CProjects/99Bottles/src
 
-CXX_FLAGS = -g -std=gnu++11
+CXX_FLAGS = -g -std=gnu++17
 

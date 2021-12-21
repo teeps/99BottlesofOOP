@@ -1,22 +1,19 @@
-Start testing: Dec 15 18:57 GMT
+Start testing: Dec 20 17:09 GMT
 ----------------------------------------------------------
-2/2 Testing: BottleSong
-2/2 Test: BottleSong
-Command: "/home/mark/Documents/CProjects/99Bottles/build/tests/99BottlesTest" "BottleSong"
+1/1 Testing: Creating registration for map index 0
+1/1 Test: Creating registration for map index 0
+Command: "/home/mark/Documents/CProjects/99Bottles/build/tests/99BottlesTest" "Creating registration for map index 0"
 Directory: /home/mark/Documents/CProjects/99Bottles/build/tests
-"BottleSong" start time: Dec 15 18:57 GMT
+"Creating registration for map index 0" start time: Dec 20 17:09 GMT
 Output:
 ----------------------------------------------------------
-Filters: BottleSong
-===============================================================================
-All tests passed (3 assertions in 1 test case)
-
+Creating registration for map index 0
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
-Test Passed.
-"BottleSong" end time: Dec 15 18:57 GMT
-"BottleSong" time elapsed: 00:00:00
+Test Failed.
+"Creating registration for map index 0" end time: Dec 20 17:09 GMT
+"Creating registration for map index 0" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Dec 15 18:57 GMT
+End testing: Dec 20 17:09 GMT

@@ -6,11 +6,17 @@
 #include <iostream>
 #include <memory>
 
+
 /** @brief This class is used to create immutable instances of BottleNumber, and has methods for getting the appropriate parts of the verse based on the BottleNumber*/
 class BottleNumber
 {
     public:
+        /** @brief Factory method to produce BottleNumber subclasses*/
         static std::unique_ptr<BottleNumber> For(const uint16_t uiNew);
+        /** @brief Method tp register a sub-class with the factory*/
+        static void Register(const uint16_t uiNew);
+        /** @brief CreateMethod for Factory*/
+        //virtual std::unique_ptr<BottleNumber> CreateMethod();
         
         /** @brief Constructor
          * @param[in] uint16_t - the number of this instance*/
@@ -55,77 +61,6 @@ class BottleNumber
         BottleNumber() {};
         uint16_t uiNumber;
         uint16_t uiMaxVerse;
-};
-
-/** @brief Specific BottleNumber class for number = 0*/
-class BottleNumber0 : public BottleNumber {
-    public:
-        /** @brief Constructor
-         * @param[in] uint16_t - the number of this instance*/
-        BottleNumber0() : uiNumber(0),uiMaxVerse(99) {};
-        /** @brief Return a string with the proper quantity (digits or 'No more') for a given number
-         * Moving this into a method rather than a switch statement gives a method which has a single responsiblity and removes the smell of a switch 
-         * from the verse method.
-         * @return quantity string
-        */
-        std::string Quantity () const;
-        /** @brief Return the correct action (final line) for the given index
-         * Moving this into a method rather than a switch statement gives a method which has a single responsiblity and removes the smell of a switch 
-         * from the verse method.
-         * @return std::string - final line*/
-        std::string Action() const;
-        /** @brief Get the successor BottleNumber for the second line
-         * @return uint16_t - successor quantity*/
-        std::unique_ptr<BottleNumber> Successor () const;
-    private:
-        uint16_t uiNumber, uiMaxVerse;
-};
-
-/** @brief Specific BottleNumber class for number = 0*/
-class BottleNumber1 : public BottleNumber {
-    public:
-        /** @brief Constructor
-         * @param[in] uint16_t - the number of this instance*/
-        BottleNumber1 ();
-        /** @brief Return a string with the song's proper pronoun (it or one) for a given number
-         * Moving this into a method rather than a switch statement gives a method which has a single responsiblity and removes the smell of a switch 
-         * from the verse method.
-         * @return Pronoun string 
-        */
-        std::string Pronoun() const;
-        /** @brief Return a string with the proper container type for a given number.
-         * Moving this into a method rather than a switch statement gives a method which has a single responsiblity and removes the smell of a switch 
-         * from the verse method.
-         * @return Container string 
-        */
-        std::string Container() const;
-};
-
-/** @brief Deprecated class, this is now dealt with by BottleNumber::For*/
-class BottleNumberFactory
-{
-    public:
-        std::unique_ptr<BottleNumber> BottleNumberFor(const uint16_t uiNumber)
-        {
-            switch (uiNumber)
-            {
-                case 0:
-                {
-                    return std::unique_ptr<BottleNumber>( new BottleNumber0());
-                    break;
-                }
-                case 1:
-                {
-                    return std::unique_ptr<BottleNumber>( new BottleNumber1());
-                    break;
-                }
-                default:
-                {
-                    return std::unique_ptr<BottleNumber>( new BottleNumber(uiNumber));
-                    break;
-                }
-            }
-        }
 };
 
 #endif
