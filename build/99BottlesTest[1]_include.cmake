@@ -1,5 +1,0 @@
-if(EXISTS "/home/mark/Documents/CProjects/99Bottles/build/99BottlesTest[1]_tests.cmake")
-  include("/home/mark/Documents/CProjects/99Bottles/build/99BottlesTest[1]_tests.cmake")
-else()
-  add_test(99BottlesTest_NOT_BUILT 99BottlesTest_NOT_BUILT)
-endif()
