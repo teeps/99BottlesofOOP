@@ -16,7 +16,7 @@ static std::string Capitalise (std::string const text)
     return RetVal;
 }
 
-std::string BeerBottleVerse::Lyric()
+std::string BeerBottleVerse::lyric()
 {
     std::stringstream sOutput;
     const std::unique_ptr<BottleNumber> bottleNumber = BottleNumber::For(uiVerseNumber);

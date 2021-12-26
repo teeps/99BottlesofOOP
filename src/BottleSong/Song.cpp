@@ -20,6 +20,7 @@
 #include <stdio.h>
 #include <iostream>
 #include <sstream>
+#include "BeerBottleVerse.h"
 Song::Song ()
 {
     /*Register the sub-classes in the factory.  This has to be done after Instancing the Factory to avoid the problem with undefined initialisation 
@@ -45,6 +46,7 @@ static std::string Capitalise (std::string const text)
 std::string Song::verse(uint16_t uiVerse)
 {
     std::stringstream sOutput;
+    return BeerBottleVerse(uiVerse).lyric();
     //Sketched pseudo-code for Chapter 8 - making verse open to different lyrics
     //if (99 bottles song) {
     const std::unique_ptr<BottleNumber> bottleNumber = BottleNumber::For(uiVerse);

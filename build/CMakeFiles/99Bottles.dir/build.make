@@ -104,6 +104,7 @@ CMakeFiles/99Bottles.dir/src/99bottles.cpp.s: cmake_force
 99Bottles: libBottleNumber1.a
 99Bottles: libBottleNumber6.a
 99Bottles: libBottleNumberFactory.a
+99Bottles: libBeerBottleVerse.a
 99Bottles: libBottleNumber.a
 99Bottles: libBottleNumber0.a
 99Bottles: libBottleNumber1.a

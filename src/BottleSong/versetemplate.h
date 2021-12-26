@@ -18,7 +18,7 @@ class VerseTemplate
         virtual std::string lyric() =0;
     protected:
         /** @brief Default Constructor not allowed*/
-        VerseTemplate();
+        VerseTemplate() {};
 };
 
 #endif

@@ -26,6 +26,7 @@ set(CMAKE_TARGET_LINKED_INFO_FILES
   "/home/mark/Documents/CProjects/99Bottles/build/CMakeFiles/BottleNumber1.dir/DependInfo.cmake"
   "/home/mark/Documents/CProjects/99Bottles/build/CMakeFiles/BottleNumber6.dir/DependInfo.cmake"
   "/home/mark/Documents/CProjects/99Bottles/build/CMakeFiles/BottleNumberFactory.dir/DependInfo.cmake"
+  "/home/mark/Documents/CProjects/99Bottles/build/CMakeFiles/BeerBottleVerse.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

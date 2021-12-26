@@ -1,0 +1,2 @@
+/bin/x86_64-linux-gnu-ar qc libBeerBottleVerse.a CMakeFiles/BeerBottleVerse.dir/src/BottleSong/BeerBottleVerse.cpp.o
+/bin/x86_64-linux-gnu-ranlib libBeerBottleVerse.a
