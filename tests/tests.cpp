@@ -1,42 +1,82 @@
-/** Catch2 tests for 99 Bottles Song Class*/
+/** @brief Catch2 tests for 99 Bottles Song Class
+*/
 
 #include "catch.hpp"
-#include "../src/BottleSong.h"
+#include "../src/BottleSong/Song.h"
+#include "../src/BottleSong/BottleNumberFactory.h"
+#include "../src/BottleSong/BottleNumber0.h"
+#include "../src/BottleSong/BottleNumber1.h"
+#include "../src/BottleSong/BottleNumber6.h"
 #include <string>
-
-TEST_CASE ( "Constructors") 
-{
-  const char * cVerseTemplate = "This is verse ${number}.\n";
-  //No args
-  BottleSong SongWithoutArgs();
-  BottleSong SongWith1Arg(cVerseTemplate);
-  BottleSong SongWith2Args(cVerseTemplate,100);
-  BottleSong SongWith3Args(cVerseTemplate,10,0);
-};
 using namespace Catch::Matchers;
 
-
-TEST_CASE ( "VerseText_2Bottles") 
+TEST_CASE ( "BottleSong") 
 {
-  const char * expected = "2 bottles of beer on the wall, 2 bottles of beer.\nTake one down and pass it around, 1 bottle of beer.\n";
-  BottleSong Song;
-  
-  REQUIRE_THAT (Song.verse(2).c_str(), Equals (expected));
-};
+  SECTION ( "VerseText_2Bottles") 
+  {
+    const char * expected = "2 bottles of beer on the wall, 2 bottles of beer.\nTake one down and pass it around, 1 bottle of beer.\n";
+    Song song;;
+    
+    REQUIRE_THAT (song.verse(2).c_str(), Equals (expected));
+  }
 
-TEST_CASE ( "VerseText_1Bottles") 
+  SECTION ( "VerseText_1Bottles") 
+  {
+    const char * expected = "1 bottle of beer on the wall, 1 bottle of beer.\nTake it down and pass it around, no more bottles of beer.\n";
+    Song song;;
+    
+    REQUIRE_THAT (song.verse(1).c_str(), Equals (expected));
+  }
+
+  SECTION ( "VerseText_0Bottles") 
+  {
+    const char * expected = "No more bottles of beer on the wall, no more bottles of beer.\nGo to the store and buy some more, 99 bottles of beer.\n";
+    Song song;;
+    
+    REQUIRE_THAT (song.verse(0).c_str(), Equals (expected));
+  }
+
+  SECTION ("Verse Text - 6 Bottles with six-pack requirement")
+  {
+    const char * expected = "1 six-pack of beer on the wall, 1 six-pack of beer.\nTake one down and pass it around, 5 bottles of beer.\n";
+    Song song;;
+    
+    REQUIRE_THAT (song.verse(6).c_str(), Equals (expected));
+  }
+
+  SECTION ("Verse Text - 7 Bottles with six-pack requirement")
+  {
+    const char * expected = "7 bottles of beer on the wall, 7 bottles of beer.\nTake one down and pass it around, 1 six-pack of beer.\n";
+    Song song;;
+    
+    REQUIRE_THAT (song.verse(7).c_str(), Equals (expected));
+  }
+}
+
+TEST_CASE ("BottleNumber")
 {
-  const char * expected = "1 bottle of beer on the wall, 1 bottle of beer.\nTake it down and pass it around, no more bottles of beer.\n";
-  BottleSong Song;
-  
-  REQUIRE_THAT (Song.verse(1).c_str(), Equals (expected));
-};
+  SECTION ("Six Pack")
+  {
+    const char * expected = "six-pack";
+    BottleNumber6 bottleNumber;
+    CHECK_THAT (bottleNumber.Container(), Equals(expected));
 
-TEST_CASE ( "VerseText_0Bottles") 
+    REQUIRE_THAT(bottleNumber.Quantity(), Equals("1"));
+  }
+  SECTION ("Seven Successor")
+  {
+    const char * expected = "1 six-pack";
+    BottleNumber bottleNumber(7);
+    CHECK_THAT (bottleNumber.Successor()->str() , Equals(expected));
+  }
+  SECTION ("Factory Returns Correct Class")
+  {
+    std::unique_ptr<BottleNumber> bottleNumber = BottleNumber::For(6);
+    REQUIRE_THAT(bottleNumber->Quantity(), Equals ("1") );
+  }
+}
+
+TEST_CASE ("BeerBottleVerse")
 {
-  const char * expected = "No more bottles of beer on the wall, no more bottles of beer.\nGo to the store and buy some more, 99 bottles of beer.\n";
-  BottleSong Song;
-  
-  REQUIRE_THAT (Song.verse(0).c_str(), Equals (expected));
-};
 
+}

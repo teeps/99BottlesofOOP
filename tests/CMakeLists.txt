@@ -15,7 +15,13 @@ find_package(Catch2 REQUIRED)
 target_link_libraries(${TARGET_TEST}
     PRIVATE
     Catch2::Catch2
-    BottleSong
+    Song
+    BottleNumber
+    BottleNumber0
+    BottleNumber1
+    BottleNumber6
+    BottleNumberFactory
+    Capitaliser
 )
 include(CTest)
 include(Catch)
