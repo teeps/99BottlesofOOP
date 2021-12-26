@@ -1,13 +1,13 @@
 /** @brief Declaration of Beer Bottle Verse class*/
 
-#ifndef BerrBottleVerse_H
-#define BerrBottleVerse_H
+#ifndef BEER_BOTTLE_VERSE_H
+#define BEER_BOTTLE_VERSE_H
 #include <cstdint>
 #include <iostream>
-#include "versetemplate.h"
+#include "VerseTemplate.h"
 
 /** @brief This abstract class creates the interface for a song like 99 Bottles of Beer*/
-class BeerBottleVerse: protected VerseTemplate
+class BeerBottleVerse: public VerseTemplate
 {
     public:
         // @brief Default Constructor with initializer list*/

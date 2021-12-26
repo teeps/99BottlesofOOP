@@ -57,14 +57,10 @@ iostream
 -
 memory
 -
-versetemplate.h
-/home/mark/Documents/CProjects/99Bottles/src/BottleSong/versetemplate.h
-BottleNumber.h
-/home/mark/Documents/CProjects/99Bottles/src/BottleSong/BottleNumber.h
-BottleNumberFactory.h
-/home/mark/Documents/CProjects/99Bottles/src/BottleSong/BottleNumberFactory.h
+VerseTemplate.h
+/home/mark/Documents/CProjects/99Bottles/src/BottleSong/VerseTemplate.h
 
-/home/mark/Documents/CProjects/99Bottles/src/BottleSong/versetemplate.h
+/home/mark/Documents/CProjects/99Bottles/src/BottleSong/VerseTemplate.h
 cstdint
 -
 iostream

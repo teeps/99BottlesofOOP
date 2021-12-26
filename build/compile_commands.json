@@ -6,6 +6,16 @@
 },
 {
   "directory": "/home/mark/Documents/CProjects/99Bottles/build",
+  "command": "/bin/x86_64-linux-gnu-g++-10   -g -std=gnu++17 -o CMakeFiles/MilkBottleVerse.dir/src/BottleSong/MilkBottleVerse.cpp.o -c /home/mark/Documents/CProjects/99Bottles/src/BottleSong/MilkBottleVerse.cpp",
+  "file": "/home/mark/Documents/CProjects/99Bottles/src/BottleSong/MilkBottleVerse.cpp"
+},
+{
+  "directory": "/home/mark/Documents/CProjects/99Bottles/build",
+  "command": "/bin/x86_64-linux-gnu-g++-10   -g -std=gnu++17 -o CMakeFiles/BottleNumber1.dir/src/BottleSong/BottleNumber1.cpp.o -c /home/mark/Documents/CProjects/99Bottles/src/BottleSong/BottleNumber1.cpp",
+  "file": "/home/mark/Documents/CProjects/99Bottles/src/BottleSong/BottleNumber1.cpp"
+},
+{
+  "directory": "/home/mark/Documents/CProjects/99Bottles/build",
   "command": "/bin/x86_64-linux-gnu-g++-10 -DTEST_DATA_PATH=\\\"src/data\\\" -I/home/mark/Documents/CProjects/99Bottles/src -g -std=gnu++17 -o CMakeFiles/99Bottles.dir/src/99bottles.cpp.o -c /home/mark/Documents/CProjects/99Bottles/src/99bottles.cpp",
   "file": "/home/mark/Documents/CProjects/99Bottles/src/99bottles.cpp"
 },
@@ -13,6 +23,11 @@
   "directory": "/home/mark/Documents/CProjects/99Bottles/build",
   "command": "/bin/x86_64-linux-gnu-g++-10   -g -std=gnu++17 -o CMakeFiles/Song.dir/src/BottleSong/Song.cpp.o -c /home/mark/Documents/CProjects/99Bottles/src/BottleSong/Song.cpp",
   "file": "/home/mark/Documents/CProjects/99Bottles/src/BottleSong/Song.cpp"
+},
+{
+  "directory": "/home/mark/Documents/CProjects/99Bottles/build",
+  "command": "/bin/x86_64-linux-gnu-g++-10   -g -std=gnu++17 -o CMakeFiles/VerseFactory.dir/src/BottleSong/VerseTemplateFactory.cpp.o -c /home/mark/Documents/CProjects/99Bottles/src/BottleSong/VerseTemplateFactory.cpp",
+  "file": "/home/mark/Documents/CProjects/99Bottles/src/BottleSong/VerseTemplateFactory.cpp"
 },
 {
   "directory": "/home/mark/Documents/CProjects/99Bottles/build",
@@ -28,11 +43,6 @@
   "directory": "/home/mark/Documents/CProjects/99Bottles/build",
   "command": "/bin/x86_64-linux-gnu-g++-10   -g -std=gnu++17 -o CMakeFiles/BottleNumber6.dir/src/BottleSong/BottleNumber6.cpp.o -c /home/mark/Documents/CProjects/99Bottles/src/BottleSong/BottleNumber6.cpp",
   "file": "/home/mark/Documents/CProjects/99Bottles/src/BottleSong/BottleNumber6.cpp"
-},
-{
-  "directory": "/home/mark/Documents/CProjects/99Bottles/build",
-  "command": "/bin/x86_64-linux-gnu-g++-10   -g -std=gnu++17 -o CMakeFiles/BottleNumber1.dir/src/BottleSong/BottleNumber1.cpp.o -c /home/mark/Documents/CProjects/99Bottles/src/BottleSong/BottleNumber1.cpp",
-  "file": "/home/mark/Documents/CProjects/99Bottles/src/BottleSong/BottleNumber1.cpp"
 },
 {
   "directory": "/home/mark/Documents/CProjects/99Bottles/build",

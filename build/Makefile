@@ -180,6 +180,32 @@ ContinuousConfigure/fast:
 .PHONY : ContinuousConfigure/fast
 
 #=============================================================================
+# Target rules for targets named ExperimentalSubmit
+
+# Build rule for target.
+ExperimentalSubmit: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ExperimentalSubmit
+.PHONY : ExperimentalSubmit
+
+# fast build rule for target.
+ExperimentalSubmit/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExperimentalSubmit.dir/build.make CMakeFiles/ExperimentalSubmit.dir/build
+.PHONY : ExperimentalSubmit/fast
+
+#=============================================================================
+# Target rules for targets named ExperimentalMemCheck
+
+# Build rule for target.
+ExperimentalMemCheck: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ExperimentalMemCheck
+.PHONY : ExperimentalMemCheck
+
+# fast build rule for target.
+ExperimentalMemCheck/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExperimentalMemCheck.dir/build.make CMakeFiles/ExperimentalMemCheck.dir/build
+.PHONY : ExperimentalMemCheck/fast
+
+#=============================================================================
 # Target rules for targets named ContinuousMemCheck
 
 # Build rule for target.
@@ -206,108 +232,17 @@ Capitaliser/fast:
 .PHONY : Capitaliser/fast
 
 #=============================================================================
-# Target rules for targets named 99Bottles
+# Target rules for targets named MilkBottleVerse
 
 # Build rule for target.
-99Bottles: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 99Bottles
-.PHONY : 99Bottles
+MilkBottleVerse: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MilkBottleVerse
+.PHONY : MilkBottleVerse
 
 # fast build rule for target.
-99Bottles/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/99Bottles.dir/build.make CMakeFiles/99Bottles.dir/build
-.PHONY : 99Bottles/fast
-
-#=============================================================================
-# Target rules for targets named Song
-
-# Build rule for target.
-Song: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Song
-.PHONY : Song
-
-# fast build rule for target.
-Song/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Song.dir/build.make CMakeFiles/Song.dir/build
-.PHONY : Song/fast
-
-#=============================================================================
-# Target rules for targets named BeerBottleVerse
-
-# Build rule for target.
-BeerBottleVerse: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BeerBottleVerse
-.PHONY : BeerBottleVerse
-
-# fast build rule for target.
-BeerBottleVerse/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BeerBottleVerse.dir/build.make CMakeFiles/BeerBottleVerse.dir/build
-.PHONY : BeerBottleVerse/fast
-
-#=============================================================================
-# Target rules for targets named BottleNumberFactory
-
-# Build rule for target.
-BottleNumberFactory: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BottleNumberFactory
-.PHONY : BottleNumberFactory
-
-# fast build rule for target.
-BottleNumberFactory/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BottleNumberFactory.dir/build.make CMakeFiles/BottleNumberFactory.dir/build
-.PHONY : BottleNumberFactory/fast
-
-#=============================================================================
-# Target rules for targets named BottleNumber6
-
-# Build rule for target.
-BottleNumber6: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BottleNumber6
-.PHONY : BottleNumber6
-
-# fast build rule for target.
-BottleNumber6/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BottleNumber6.dir/build.make CMakeFiles/BottleNumber6.dir/build
-.PHONY : BottleNumber6/fast
-
-#=============================================================================
-# Target rules for targets named NightlyConfigure
-
-# Build rule for target.
-NightlyConfigure: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NightlyConfigure
-.PHONY : NightlyConfigure
-
-# fast build rule for target.
-NightlyConfigure/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NightlyConfigure.dir/build.make CMakeFiles/NightlyConfigure.dir/build
-.PHONY : NightlyConfigure/fast
-
-#=============================================================================
-# Target rules for targets named NightlyMemoryCheck
-
-# Build rule for target.
-NightlyMemoryCheck: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NightlyMemoryCheck
-.PHONY : NightlyMemoryCheck
-
-# fast build rule for target.
-NightlyMemoryCheck/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NightlyMemoryCheck.dir/build.make CMakeFiles/NightlyMemoryCheck.dir/build
-.PHONY : NightlyMemoryCheck/fast
-
-#=============================================================================
-# Target rules for targets named ExperimentalTest
-
-# Build rule for target.
-ExperimentalTest: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ExperimentalTest
-.PHONY : ExperimentalTest
-
-# fast build rule for target.
-ExperimentalTest/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExperimentalTest.dir/build.make CMakeFiles/ExperimentalTest.dir/build
-.PHONY : ExperimentalTest/fast
+MilkBottleVerse/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MilkBottleVerse.dir/build.make CMakeFiles/MilkBottleVerse.dir/build
+.PHONY : MilkBottleVerse/fast
 
 #=============================================================================
 # Target rules for targets named BottleNumber1
@@ -362,6 +297,97 @@ NightlyMemCheck/fast:
 .PHONY : NightlyMemCheck/fast
 
 #=============================================================================
+# Target rules for targets named 99Bottles
+
+# Build rule for target.
+99Bottles: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 99Bottles
+.PHONY : 99Bottles
+
+# fast build rule for target.
+99Bottles/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/99Bottles.dir/build.make CMakeFiles/99Bottles.dir/build
+.PHONY : 99Bottles/fast
+
+#=============================================================================
+# Target rules for targets named Song
+
+# Build rule for target.
+Song: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Song
+.PHONY : Song
+
+# fast build rule for target.
+Song/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Song.dir/build.make CMakeFiles/Song.dir/build
+.PHONY : Song/fast
+
+#=============================================================================
+# Target rules for targets named VerseFactory
+
+# Build rule for target.
+VerseFactory: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 VerseFactory
+.PHONY : VerseFactory
+
+# fast build rule for target.
+VerseFactory/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VerseFactory.dir/build.make CMakeFiles/VerseFactory.dir/build
+.PHONY : VerseFactory/fast
+
+#=============================================================================
+# Target rules for targets named BeerBottleVerse
+
+# Build rule for target.
+BeerBottleVerse: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BeerBottleVerse
+.PHONY : BeerBottleVerse
+
+# fast build rule for target.
+BeerBottleVerse/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BeerBottleVerse.dir/build.make CMakeFiles/BeerBottleVerse.dir/build
+.PHONY : BeerBottleVerse/fast
+
+#=============================================================================
+# Target rules for targets named BottleNumberFactory
+
+# Build rule for target.
+BottleNumberFactory: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BottleNumberFactory
+.PHONY : BottleNumberFactory
+
+# fast build rule for target.
+BottleNumberFactory/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BottleNumberFactory.dir/build.make CMakeFiles/BottleNumberFactory.dir/build
+.PHONY : BottleNumberFactory/fast
+
+#=============================================================================
+# Target rules for targets named BottleNumber6
+
+# Build rule for target.
+BottleNumber6: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BottleNumber6
+.PHONY : BottleNumber6
+
+# fast build rule for target.
+BottleNumber6/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BottleNumber6.dir/build.make CMakeFiles/BottleNumber6.dir/build
+.PHONY : BottleNumber6/fast
+
+#=============================================================================
+# Target rules for targets named NightlyConfigure
+
+# Build rule for target.
+NightlyConfigure: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NightlyConfigure
+.PHONY : NightlyConfigure
+
+# fast build rule for target.
+NightlyConfigure/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NightlyConfigure.dir/build.make CMakeFiles/NightlyConfigure.dir/build
+.PHONY : NightlyConfigure/fast
+
+#=============================================================================
 # Target rules for targets named ContinuousTest
 
 # Build rule for target.
@@ -414,6 +440,32 @@ BottleNumber/fast:
 .PHONY : BottleNumber/fast
 
 #=============================================================================
+# Target rules for targets named NightlyMemoryCheck
+
+# Build rule for target.
+NightlyMemoryCheck: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NightlyMemoryCheck
+.PHONY : NightlyMemoryCheck
+
+# fast build rule for target.
+NightlyMemoryCheck/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NightlyMemoryCheck.dir/build.make CMakeFiles/NightlyMemoryCheck.dir/build
+.PHONY : NightlyMemoryCheck/fast
+
+#=============================================================================
+# Target rules for targets named ExperimentalTest
+
+# Build rule for target.
+ExperimentalTest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ExperimentalTest
+.PHONY : ExperimentalTest
+
+# fast build rule for target.
+ExperimentalTest/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExperimentalTest.dir/build.make CMakeFiles/ExperimentalTest.dir/build
+.PHONY : ExperimentalTest/fast
+
+#=============================================================================
 # Target rules for targets named NightlyUpdate
 
 # Build rule for target.
@@ -451,32 +503,6 @@ ExperimentalConfigure: cmake_check_build_system
 ExperimentalConfigure/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExperimentalConfigure.dir/build.make CMakeFiles/ExperimentalConfigure.dir/build
 .PHONY : ExperimentalConfigure/fast
-
-#=============================================================================
-# Target rules for targets named ExperimentalMemCheck
-
-# Build rule for target.
-ExperimentalMemCheck: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ExperimentalMemCheck
-.PHONY : ExperimentalMemCheck
-
-# fast build rule for target.
-ExperimentalMemCheck/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExperimentalMemCheck.dir/build.make CMakeFiles/ExperimentalMemCheck.dir/build
-.PHONY : ExperimentalMemCheck/fast
-
-#=============================================================================
-# Target rules for targets named ExperimentalSubmit
-
-# Build rule for target.
-ExperimentalSubmit: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ExperimentalSubmit
-.PHONY : ExperimentalSubmit
-
-# fast build rule for target.
-ExperimentalSubmit/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExperimentalSubmit.dir/build.make CMakeFiles/ExperimentalSubmit.dir/build
-.PHONY : ExperimentalSubmit/fast
 
 #=============================================================================
 # Target rules for targets named NightlyTest
@@ -823,6 +849,33 @@ src/BottleSong/BottleNumberFactory.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BottleNumberFactory.dir/build.make CMakeFiles/BottleNumberFactory.dir/src/BottleSong/BottleNumberFactory.cpp.s
 .PHONY : src/BottleSong/BottleNumberFactory.cpp.s
 
+src/BottleSong/MilkBottleVerse.o: src/BottleSong/MilkBottleVerse.cpp.o
+
+.PHONY : src/BottleSong/MilkBottleVerse.o
+
+# target to build an object file
+src/BottleSong/MilkBottleVerse.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MilkBottleVerse.dir/build.make CMakeFiles/MilkBottleVerse.dir/src/BottleSong/MilkBottleVerse.cpp.o
+.PHONY : src/BottleSong/MilkBottleVerse.cpp.o
+
+src/BottleSong/MilkBottleVerse.i: src/BottleSong/MilkBottleVerse.cpp.i
+
+.PHONY : src/BottleSong/MilkBottleVerse.i
+
+# target to preprocess a source file
+src/BottleSong/MilkBottleVerse.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MilkBottleVerse.dir/build.make CMakeFiles/MilkBottleVerse.dir/src/BottleSong/MilkBottleVerse.cpp.i
+.PHONY : src/BottleSong/MilkBottleVerse.cpp.i
+
+src/BottleSong/MilkBottleVerse.s: src/BottleSong/MilkBottleVerse.cpp.s
+
+.PHONY : src/BottleSong/MilkBottleVerse.s
+
+# target to generate assembly for a file
+src/BottleSong/MilkBottleVerse.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MilkBottleVerse.dir/build.make CMakeFiles/MilkBottleVerse.dir/src/BottleSong/MilkBottleVerse.cpp.s
+.PHONY : src/BottleSong/MilkBottleVerse.cpp.s
+
 src/BottleSong/Song.o: src/BottleSong/Song.cpp.o
 
 .PHONY : src/BottleSong/Song.o
@@ -849,6 +902,33 @@ src/BottleSong/Song.s: src/BottleSong/Song.cpp.s
 src/BottleSong/Song.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Song.dir/build.make CMakeFiles/Song.dir/src/BottleSong/Song.cpp.s
 .PHONY : src/BottleSong/Song.cpp.s
+
+src/BottleSong/VerseTemplateFactory.o: src/BottleSong/VerseTemplateFactory.cpp.o
+
+.PHONY : src/BottleSong/VerseTemplateFactory.o
+
+# target to build an object file
+src/BottleSong/VerseTemplateFactory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VerseFactory.dir/build.make CMakeFiles/VerseFactory.dir/src/BottleSong/VerseTemplateFactory.cpp.o
+.PHONY : src/BottleSong/VerseTemplateFactory.cpp.o
+
+src/BottleSong/VerseTemplateFactory.i: src/BottleSong/VerseTemplateFactory.cpp.i
+
+.PHONY : src/BottleSong/VerseTemplateFactory.i
+
+# target to preprocess a source file
+src/BottleSong/VerseTemplateFactory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VerseFactory.dir/build.make CMakeFiles/VerseFactory.dir/src/BottleSong/VerseTemplateFactory.cpp.i
+.PHONY : src/BottleSong/VerseTemplateFactory.cpp.i
+
+src/BottleSong/VerseTemplateFactory.s: src/BottleSong/VerseTemplateFactory.cpp.s
+
+.PHONY : src/BottleSong/VerseTemplateFactory.s
+
+# target to generate assembly for a file
+src/BottleSong/VerseTemplateFactory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VerseFactory.dir/build.make CMakeFiles/VerseFactory.dir/src/BottleSong/VerseTemplateFactory.cpp.s
+.PHONY : src/BottleSong/VerseTemplateFactory.cpp.s
 
 src/Capitaliser/Capitaliser.o: src/Capitaliser/Capitaliser.cpp.o
 
@@ -923,7 +1003,9 @@ help:
 	@echo "... BottleNumber6"
 	@echo "... BottleNumberFactory"
 	@echo "... Capitaliser"
+	@echo "... MilkBottleVerse"
 	@echo "... Song"
+	@echo "... VerseFactory"
 	@echo "... src/99bottles.o"
 	@echo "... src/99bottles.i"
 	@echo "... src/99bottles.s"
@@ -945,9 +1027,15 @@ help:
 	@echo "... src/BottleSong/BottleNumberFactory.o"
 	@echo "... src/BottleSong/BottleNumberFactory.i"
 	@echo "... src/BottleSong/BottleNumberFactory.s"
+	@echo "... src/BottleSong/MilkBottleVerse.o"
+	@echo "... src/BottleSong/MilkBottleVerse.i"
+	@echo "... src/BottleSong/MilkBottleVerse.s"
 	@echo "... src/BottleSong/Song.o"
 	@echo "... src/BottleSong/Song.i"
 	@echo "... src/BottleSong/Song.s"
+	@echo "... src/BottleSong/VerseTemplateFactory.o"
+	@echo "... src/BottleSong/VerseTemplateFactory.i"
+	@echo "... src/BottleSong/VerseTemplateFactory.s"
 	@echo "... src/Capitaliser/Capitaliser.o"
 	@echo "... src/Capitaliser/Capitaliser.i"
 	@echo "... src/Capitaliser/Capitaliser.s"

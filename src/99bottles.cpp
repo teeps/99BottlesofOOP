@@ -1,5 +1,7 @@
 #include <iostream>
 #include "BottleSong/Song.h"
+#include "BottleSong/BottleNumberFactory.h"
+#include "BottleSong/BottleNumber.h"
 #include "BottleSong/BottleNumber0.h"
 #include "BottleSong/BottleNumber1.h"
 #include "BottleSong/BottleNumber6.h"

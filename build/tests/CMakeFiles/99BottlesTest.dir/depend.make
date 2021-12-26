@@ -11,7 +11,7 @@ tests/CMakeFiles/99BottlesTest.dir/tests.cpp.o: ../src/BottleSong/BottleNumber1.
 tests/CMakeFiles/99BottlesTest.dir/tests.cpp.o: ../src/BottleSong/BottleNumber6.h
 tests/CMakeFiles/99BottlesTest.dir/tests.cpp.o: ../src/BottleSong/BottleNumberFactory.h
 tests/CMakeFiles/99BottlesTest.dir/tests.cpp.o: ../src/BottleSong/Song.h
-tests/CMakeFiles/99BottlesTest.dir/tests.cpp.o: ../src/BottleSong/versetemplate.h
+tests/CMakeFiles/99BottlesTest.dir/tests.cpp.o: ../src/BottleSong/VerseTemplate.h
 tests/CMakeFiles/99BottlesTest.dir/tests.cpp.o: ../tests/catch.hpp
 tests/CMakeFiles/99BottlesTest.dir/tests.cpp.o: ../tests/tests.cpp
 

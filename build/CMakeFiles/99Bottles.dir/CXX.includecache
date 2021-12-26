@@ -11,6 +11,10 @@ iostream
 -
 BottleSong/Song.h
 /home/mark/Documents/CProjects/99Bottles/src/BottleSong/Song.h
+BottleSong/BottleNumberFactory.h
+/home/mark/Documents/CProjects/99Bottles/src/BottleSong/BottleNumberFactory.h
+BottleSong/BottleNumber.h
+/home/mark/Documents/CProjects/99Bottles/src/BottleSong/BottleNumber.h
 BottleSong/BottleNumber0.h
 /home/mark/Documents/CProjects/99Bottles/src/BottleSong/BottleNumber0.h
 BottleSong/BottleNumber1.h
@@ -69,14 +73,10 @@ iostream
 -
 memory
 -
-versetemplate.h
-/home/mark/Documents/CProjects/99Bottles/src/BottleSong/versetemplate.h
-BottleNumber.h
-/home/mark/Documents/CProjects/99Bottles/src/BottleSong/BottleNumber.h
-BottleNumberFactory.h
-/home/mark/Documents/CProjects/99Bottles/src/BottleSong/BottleNumberFactory.h
+VerseTemplate.h
+/home/mark/Documents/CProjects/99Bottles/src/BottleSong/VerseTemplate.h
 
-/home/mark/Documents/CProjects/99Bottles/src/BottleSong/versetemplate.h
+/home/mark/Documents/CProjects/99Bottles/src/BottleSong/VerseTemplate.h
 cstdint
 -
 iostream

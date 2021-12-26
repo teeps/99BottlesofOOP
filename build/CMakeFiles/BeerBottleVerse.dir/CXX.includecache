@@ -31,8 +31,8 @@ cstdint
 -
 iostream
 -
-versetemplate.h
-/home/mark/Documents/CProjects/99Bottles/src/BottleSong/versetemplate.h
+VerseTemplate.h
+/home/mark/Documents/CProjects/99Bottles/src/BottleSong/VerseTemplate.h
 
 /home/mark/Documents/CProjects/99Bottles/src/BottleSong/BottleNumber.h
 cstdint
@@ -78,7 +78,7 @@ map
 BottleNumber.h
 /home/mark/Documents/CProjects/99Bottles/src/BottleSong/BottleNumber.h
 
-/home/mark/Documents/CProjects/99Bottles/src/BottleSong/versetemplate.h
+/home/mark/Documents/CProjects/99Bottles/src/BottleSong/VerseTemplate.h
 cstdint
 -
 iostream

@@ -5,12 +5,7 @@
 #include <cstdint>
 #include <iostream>
 #include <memory>
-#include "versetemplate.h"
-#include "BottleNumber.h"
-#include "BottleNumberFactory.h"
-
-
-
+#include "VerseTemplate.h"
 
 /** @brief This class creates the 99 bottles song
  * @todo replace naked pointers with unique_ptr etc.
@@ -20,6 +15,8 @@ class Song
     public:
         /** @brief Default Constructor, defaults to standard 99 bottles of beer song*/
         Song();
+        /** @brief Constructor with verse template string*/
+        Song(const char *);
         /** @brief Constructor with arguments
          * @param[in] const std::weak_ptr<VerseTemplate> - Verse template
          * @param[in] uint16_t - max verses
@@ -44,7 +41,11 @@ class Song
          * @return std::string
          */
         std::string verses (uint16_t,uint16_t);
+        void vPrintVerseType(){std::cout<<VerseType<<std::endl;}
     private:
+        /** @brief Function pointer for verse template constructor*/ 
+        VerseTemplate* (* pfVerse)(uint16_t);
+        std::string VerseType;
 };
 
 #endif

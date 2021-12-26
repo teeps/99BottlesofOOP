@@ -136,6 +136,8 @@ tests/99BottlesTest: libBottleNumber1.a
 tests/99BottlesTest: libBottleNumber6.a
 tests/99BottlesTest: libBottleNumberFactory.a
 tests/99BottlesTest: libCapitaliser.a
+tests/99BottlesTest: libVerseFactory.a
+tests/99BottlesTest: libMilkBottleVerse.a
 tests/99BottlesTest: libBeerBottleVerse.a
 tests/99BottlesTest: libBottleNumber.a
 tests/99BottlesTest: libBottleNumber0.a

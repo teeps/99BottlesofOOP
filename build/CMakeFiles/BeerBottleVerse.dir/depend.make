@@ -8,5 +8,5 @@ CMakeFiles/BeerBottleVerse.dir/src/BottleSong/BeerBottleVerse.cpp.o: ../src/Bott
 CMakeFiles/BeerBottleVerse.dir/src/BottleSong/BeerBottleVerse.cpp.o: ../src/BottleSong/BottleNumber1.h
 CMakeFiles/BeerBottleVerse.dir/src/BottleSong/BeerBottleVerse.cpp.o: ../src/BottleSong/BottleNumber6.h
 CMakeFiles/BeerBottleVerse.dir/src/BottleSong/BeerBottleVerse.cpp.o: ../src/BottleSong/BottleNumberFactory.h
-CMakeFiles/BeerBottleVerse.dir/src/BottleSong/BeerBottleVerse.cpp.o: ../src/BottleSong/versetemplate.h
+CMakeFiles/BeerBottleVerse.dir/src/BottleSong/BeerBottleVerse.cpp.o: ../src/BottleSong/VerseTemplate.h
 
