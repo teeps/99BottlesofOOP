@@ -1,5 +1,8 @@
 #include <iostream>
-#include "BottleSong/BottleSong.h"
+#include "BottleSong/Song.h"
+#include "BottleSong/BottleNumber0.h"
+#include "BottleSong/BottleNumber1.h"
+#include "BottleSong/BottleNumber6.h"
 
 int main ()
 {
@@ -10,7 +13,7 @@ int main ()
     static bool b6Registered = BottleNumberFactory::Register(6,BottleNumber6::CreateMethod);
  
     std::cout << "Hello World" << std::endl;
-    BottleSong newSong;
+    Song newSong;
     std::cout << newSong.verses(99,0);
     return 0;
 }

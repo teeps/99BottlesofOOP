@@ -98,12 +98,16 @@ CMakeFiles/99Bottles.dir/src/99bottles.cpp.s: cmake_force
 
 99Bottles: CMakeFiles/99Bottles.dir/src/99bottles.cpp.o
 99Bottles: CMakeFiles/99Bottles.dir/build.make
-99Bottles: libBottleSong.a
+99Bottles: libSong.a
 99Bottles: libBottleNumber.a
 99Bottles: libBottleNumber0.a
 99Bottles: libBottleNumber1.a
 99Bottles: libBottleNumber6.a
 99Bottles: libBottleNumberFactory.a
+99Bottles: libBottleNumber.a
+99Bottles: libBottleNumber0.a
+99Bottles: libBottleNumber1.a
+99Bottles: libBottleNumber6.a
 99Bottles: CMakeFiles/99Bottles.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mark/Documents/CProjects/99Bottles/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable 99Bottles"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/99Bottles.dir/link.txt --verbose=$(VERBOSE)

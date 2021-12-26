@@ -129,13 +129,17 @@ tests/99BottlesTest: tests/CMakeFiles/99BottlesTest.dir/tests.cpp.o
 tests/99BottlesTest: tests/CMakeFiles/99BottlesTest.dir/tests_main.cpp.o
 tests/99BottlesTest: tests/CMakeFiles/99BottlesTest.dir/build.make
 tests/99BottlesTest: /usr/local/lib/libCatch2.a
-tests/99BottlesTest: libBottleSong.a
+tests/99BottlesTest: libSong.a
 tests/99BottlesTest: libBottleNumber.a
 tests/99BottlesTest: libBottleNumber0.a
 tests/99BottlesTest: libBottleNumber1.a
 tests/99BottlesTest: libBottleNumber6.a
 tests/99BottlesTest: libBottleNumberFactory.a
 tests/99BottlesTest: libCapitaliser.a
+tests/99BottlesTest: libBottleNumber.a
+tests/99BottlesTest: libBottleNumber0.a
+tests/99BottlesTest: libBottleNumber1.a
+tests/99BottlesTest: libBottleNumber6.a
 tests/99BottlesTest: tests/CMakeFiles/99BottlesTest.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mark/Documents/CProjects/99Bottles/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable 99BottlesTest"
 	cd /home/mark/Documents/CProjects/99Bottles/build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/99BottlesTest.dir/link.txt --verbose=$(VERBOSE)

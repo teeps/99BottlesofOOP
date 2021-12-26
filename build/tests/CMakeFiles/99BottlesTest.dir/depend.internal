@@ -11,7 +11,8 @@ tests/CMakeFiles/99BottlesTest.dir/tests.cpp.o
  /home/mark/Documents/CProjects/99Bottles/src/BottleSong/BottleNumber1.h
  /home/mark/Documents/CProjects/99Bottles/src/BottleSong/BottleNumber6.h
  /home/mark/Documents/CProjects/99Bottles/src/BottleSong/BottleNumberFactory.h
- /home/mark/Documents/CProjects/99Bottles/src/BottleSong/BottleSong.h
+ /home/mark/Documents/CProjects/99Bottles/src/BottleSong/Song.h
+ /home/mark/Documents/CProjects/99Bottles/src/BottleSong/versetemplate.h
  /home/mark/Documents/CProjects/99Bottles/tests/catch.hpp
  /home/mark/Documents/CProjects/99Bottles/tests/tests.cpp
 tests/CMakeFiles/99BottlesTest.dir/tests_main.cpp.o

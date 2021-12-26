@@ -73,8 +73,8 @@ CMAKE_BINARY_DIR = /home/mark/Documents/CProjects/99Bottles/build
 
 # The main recursive "all" target.
 all: CMakeFiles/99Bottles.dir/all
+all: CMakeFiles/Song.dir/all
 all: CMakeFiles/Capitaliser.dir/all
-all: CMakeFiles/BottleSong.dir/all
 all: CMakeFiles/BottleNumberFactory.dir/all
 all: CMakeFiles/BottleNumber6.dir/all
 all: CMakeFiles/BottleNumber1.dir/all
@@ -94,9 +94,9 @@ clean: CMakeFiles/ContinuousSubmit.dir/clean
 clean: CMakeFiles/ContinuousBuild.dir/clean
 clean: CMakeFiles/ContinuousConfigure.dir/clean
 clean: CMakeFiles/99Bottles.dir/clean
+clean: CMakeFiles/Song.dir/clean
 clean: CMakeFiles/ContinuousMemCheck.dir/clean
 clean: CMakeFiles/Capitaliser.dir/clean
-clean: CMakeFiles/BottleSong.dir/clean
 clean: CMakeFiles/BottleNumberFactory.dir/clean
 clean: CMakeFiles/BottleNumber6.dir/clean
 clean: CMakeFiles/NightlyConfigure.dir/clean
@@ -233,7 +233,7 @@ CMakeFiles/ContinuousConfigure.dir/clean:
 # Target rules for target CMakeFiles/99Bottles.dir
 
 # All Build rule for target.
-CMakeFiles/99Bottles.dir/all: CMakeFiles/BottleSong.dir/all
+CMakeFiles/99Bottles.dir/all: CMakeFiles/Song.dir/all
 CMakeFiles/99Bottles.dir/all: CMakeFiles/BottleNumberFactory.dir/all
 CMakeFiles/99Bottles.dir/all: CMakeFiles/BottleNumber6.dir/all
 CMakeFiles/99Bottles.dir/all: CMakeFiles/BottleNumber1.dir/all
@@ -260,6 +260,33 @@ CMakeFiles/99Bottles.dir/rule: cmake_check_build_system
 CMakeFiles/99Bottles.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/99Bottles.dir/build.make CMakeFiles/99Bottles.dir/clean
 .PHONY : CMakeFiles/99Bottles.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/Song.dir
+
+# All Build rule for target.
+CMakeFiles/Song.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Song.dir/build.make CMakeFiles/Song.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Song.dir/build.make CMakeFiles/Song.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mark/Documents/CProjects/99Bottles/build/CMakeFiles --progress-num=19,20 "Built target Song"
+.PHONY : CMakeFiles/Song.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Song.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mark/Documents/CProjects/99Bottles/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Song.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mark/Documents/CProjects/99Bottles/build/CMakeFiles 0
+.PHONY : CMakeFiles/Song.dir/rule
+
+# Convenience name for target.
+Song: CMakeFiles/Song.dir/rule
+
+.PHONY : Song
+
+# clean rule for target.
+CMakeFiles/Song.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Song.dir/build.make CMakeFiles/Song.dir/clean
+.PHONY : CMakeFiles/Song.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/ContinuousMemCheck.dir
@@ -295,7 +322,7 @@ CMakeFiles/ContinuousMemCheck.dir/clean:
 CMakeFiles/Capitaliser.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Capitaliser.dir/build.make CMakeFiles/Capitaliser.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Capitaliser.dir/build.make CMakeFiles/Capitaliser.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mark/Documents/CProjects/99Bottles/build/CMakeFiles --progress-num=19,20 "Built target Capitaliser"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mark/Documents/CProjects/99Bottles/build/CMakeFiles --progress-num=17,18 "Built target Capitaliser"
 .PHONY : CMakeFiles/Capitaliser.dir/all
 
 # Build rule for subdir invocation for target.
@@ -316,37 +343,13 @@ CMakeFiles/Capitaliser.dir/clean:
 .PHONY : CMakeFiles/Capitaliser.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/BottleSong.dir
-
-# All Build rule for target.
-CMakeFiles/BottleSong.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BottleSong.dir/build.make CMakeFiles/BottleSong.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BottleSong.dir/build.make CMakeFiles/BottleSong.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mark/Documents/CProjects/99Bottles/build/CMakeFiles --progress-num=17,18 "Built target BottleSong"
-.PHONY : CMakeFiles/BottleSong.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/BottleSong.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mark/Documents/CProjects/99Bottles/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/BottleSong.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mark/Documents/CProjects/99Bottles/build/CMakeFiles 0
-.PHONY : CMakeFiles/BottleSong.dir/rule
-
-# Convenience name for target.
-BottleSong: CMakeFiles/BottleSong.dir/rule
-
-.PHONY : BottleSong
-
-# clean rule for target.
-CMakeFiles/BottleSong.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BottleSong.dir/build.make CMakeFiles/BottleSong.dir/clean
-.PHONY : CMakeFiles/BottleSong.dir/clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/BottleNumberFactory.dir
 
 # All Build rule for target.
-CMakeFiles/BottleNumberFactory.dir/all:
+CMakeFiles/BottleNumberFactory.dir/all: CMakeFiles/BottleNumber6.dir/all
+CMakeFiles/BottleNumberFactory.dir/all: CMakeFiles/BottleNumber1.dir/all
+CMakeFiles/BottleNumberFactory.dir/all: CMakeFiles/BottleNumber0.dir/all
+CMakeFiles/BottleNumberFactory.dir/all: CMakeFiles/BottleNumber.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BottleNumberFactory.dir/build.make CMakeFiles/BottleNumberFactory.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BottleNumberFactory.dir/build.make CMakeFiles/BottleNumberFactory.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mark/Documents/CProjects/99Bottles/build/CMakeFiles --progress-num=15,16 "Built target BottleNumberFactory"
@@ -354,7 +357,7 @@ CMakeFiles/BottleNumberFactory.dir/all:
 
 # Build rule for subdir invocation for target.
 CMakeFiles/BottleNumberFactory.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mark/Documents/CProjects/99Bottles/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mark/Documents/CProjects/99Bottles/build/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/BottleNumberFactory.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mark/Documents/CProjects/99Bottles/build/CMakeFiles 0
 .PHONY : CMakeFiles/BottleNumberFactory.dir/rule
@@ -1129,8 +1132,8 @@ CMakeFiles/ContinuousStart.dir/clean:
 # Target rules for target tests/CMakeFiles/99BottlesTest.dir
 
 # All Build rule for target.
+tests/CMakeFiles/99BottlesTest.dir/all: CMakeFiles/Song.dir/all
 tests/CMakeFiles/99BottlesTest.dir/all: CMakeFiles/Capitaliser.dir/all
-tests/CMakeFiles/99BottlesTest.dir/all: CMakeFiles/BottleSong.dir/all
 tests/CMakeFiles/99BottlesTest.dir/all: CMakeFiles/BottleNumberFactory.dir/all
 tests/CMakeFiles/99BottlesTest.dir/all: CMakeFiles/BottleNumber6.dir/all
 tests/CMakeFiles/99BottlesTest.dir/all: CMakeFiles/BottleNumber1.dir/all

@@ -25,7 +25,7 @@ class BottleNumber1 : public BottleNumber {
          * @return Container string 
         */
         std::string Container() const;
-        /** @brief Get a new BottleNumber0 object
+        /** @brief Get a new BottleNumber1 object
          * @return std::unique_ptr<BottleNumber>*/
         static std::unique_ptr<BottleNumber> CreateMethod ();
 };

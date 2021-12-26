@@ -18,11 +18,21 @@ add_library (BottleNumber0 "${PROJECT_SOURCE_DIR}/BottleSong/BottleNumber0.cpp")
 add_library (BottleNumber1 "${PROJECT_SOURCE_DIR}/BottleSong/BottleNumber1.cpp")
 add_library (BottleNumber6 "${PROJECT_SOURCE_DIR}/BottleSong/BottleNumber6.cpp")
 add_library (BottleNumberFactory "${PROJECT_SOURCE_DIR}/BottleSong/BottleNumberFactory.cpp")
-add_library (BottleSong "${PROJECT_SOURCE_DIR}/BottleSong/BottleSong.cpp")
+#The class libraries must be added to the BottleNumberFactory otherwise the linker will not always find the static CreateMethod members from all the subclasses
+target_link_libraries(BottleNumberFactory 
+    BottleNumber
+    BottleNumber0
+    BottleNumber1
+    BottleNumber6)
+add_library (Song "${PROJECT_SOURCE_DIR}/BottleSong/Song.cpp")
 add_library (Capitaliser "${PROJECT_SOURCE_DIR}/Capitaliser/Capitaliser.cpp")
 #add the executable
 add_executable(99Bottles ${PROJECT_SOURCE_DIR}/99bottles.cpp)
-target_link_libraries(99Bottles BottleSong BottleNumber BottleNumber0 BottleNumber1 
+target_link_libraries(99Bottles 
+    Song 
+    BottleNumber 
+    BottleNumber0 
+    BottleNumber1 
     BottleNumber6
     BottleNumberFactory)
 

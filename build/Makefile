@@ -193,6 +193,19 @@ ContinuousConfigure/fast:
 .PHONY : 99Bottles/fast
 
 #=============================================================================
+# Target rules for targets named Song
+
+# Build rule for target.
+Song: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Song
+.PHONY : Song
+
+# fast build rule for target.
+Song/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Song.dir/build.make CMakeFiles/Song.dir/build
+.PHONY : Song/fast
+
+#=============================================================================
 # Target rules for targets named ContinuousMemCheck
 
 # Build rule for target.
@@ -217,19 +230,6 @@ Capitaliser: cmake_check_build_system
 Capitaliser/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Capitaliser.dir/build.make CMakeFiles/Capitaliser.dir/build
 .PHONY : Capitaliser/fast
-
-#=============================================================================
-# Target rules for targets named BottleSong
-
-# Build rule for target.
-BottleSong: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BottleSong
-.PHONY : BottleSong
-
-# fast build rule for target.
-BottleSong/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BottleSong.dir/build.make CMakeFiles/BottleSong.dir/build
-.PHONY : BottleSong/fast
 
 #=============================================================================
 # Target rules for targets named BottleNumberFactory
@@ -783,32 +783,32 @@ src/BottleSong/BottleNumberFactory.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BottleNumberFactory.dir/build.make CMakeFiles/BottleNumberFactory.dir/src/BottleSong/BottleNumberFactory.cpp.s
 .PHONY : src/BottleSong/BottleNumberFactory.cpp.s
 
-src/BottleSong/BottleSong.o: src/BottleSong/BottleSong.cpp.o
+src/BottleSong/Song.o: src/BottleSong/Song.cpp.o
 
-.PHONY : src/BottleSong/BottleSong.o
+.PHONY : src/BottleSong/Song.o
 
 # target to build an object file
-src/BottleSong/BottleSong.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BottleSong.dir/build.make CMakeFiles/BottleSong.dir/src/BottleSong/BottleSong.cpp.o
-.PHONY : src/BottleSong/BottleSong.cpp.o
+src/BottleSong/Song.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Song.dir/build.make CMakeFiles/Song.dir/src/BottleSong/Song.cpp.o
+.PHONY : src/BottleSong/Song.cpp.o
 
-src/BottleSong/BottleSong.i: src/BottleSong/BottleSong.cpp.i
+src/BottleSong/Song.i: src/BottleSong/Song.cpp.i
 
-.PHONY : src/BottleSong/BottleSong.i
+.PHONY : src/BottleSong/Song.i
 
 # target to preprocess a source file
-src/BottleSong/BottleSong.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BottleSong.dir/build.make CMakeFiles/BottleSong.dir/src/BottleSong/BottleSong.cpp.i
-.PHONY : src/BottleSong/BottleSong.cpp.i
+src/BottleSong/Song.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Song.dir/build.make CMakeFiles/Song.dir/src/BottleSong/Song.cpp.i
+.PHONY : src/BottleSong/Song.cpp.i
 
-src/BottleSong/BottleSong.s: src/BottleSong/BottleSong.cpp.s
+src/BottleSong/Song.s: src/BottleSong/Song.cpp.s
 
-.PHONY : src/BottleSong/BottleSong.s
+.PHONY : src/BottleSong/Song.s
 
 # target to generate assembly for a file
-src/BottleSong/BottleSong.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BottleSong.dir/build.make CMakeFiles/BottleSong.dir/src/BottleSong/BottleSong.cpp.s
-.PHONY : src/BottleSong/BottleSong.cpp.s
+src/BottleSong/Song.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Song.dir/build.make CMakeFiles/Song.dir/src/BottleSong/Song.cpp.s
+.PHONY : src/BottleSong/Song.cpp.s
 
 src/Capitaliser/Capitaliser.o: src/Capitaliser/Capitaliser.cpp.o
 
@@ -881,8 +881,8 @@ help:
 	@echo "... BottleNumber1"
 	@echo "... BottleNumber6"
 	@echo "... BottleNumberFactory"
-	@echo "... BottleSong"
 	@echo "... Capitaliser"
+	@echo "... Song"
 	@echo "... src/99bottles.o"
 	@echo "... src/99bottles.i"
 	@echo "... src/99bottles.s"
@@ -901,9 +901,9 @@ help:
 	@echo "... src/BottleSong/BottleNumberFactory.o"
 	@echo "... src/BottleSong/BottleNumberFactory.i"
 	@echo "... src/BottleSong/BottleNumberFactory.s"
-	@echo "... src/BottleSong/BottleSong.o"
-	@echo "... src/BottleSong/BottleSong.i"
-	@echo "... src/BottleSong/BottleSong.s"
+	@echo "... src/BottleSong/Song.o"
+	@echo "... src/BottleSong/Song.i"
+	@echo "... src/BottleSong/Song.s"
 	@echo "... src/Capitaliser/Capitaliser.o"
 	@echo "... src/Capitaliser/Capitaliser.i"
 	@echo "... src/Capitaliser/Capitaliser.s"

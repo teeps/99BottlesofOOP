@@ -60,10 +60,12 @@ std::unique_ptr<BottleNumber> BottleNumber::Successor () const
     return For(uiNumber-1);
 }
 
+
 std::unique_ptr<BottleNumber> BottleNumber::For(const uint16_t uiNew)
 {
-    BottleNumberFactory *pFactory = BottleNumberFactory::Instance();
-    return BottleNumberFactory::Create(uiNew);
+    return pFactory(uiNew); //Dependency injected creation
+    //BottleNumberFactory *pFactory = BottleNumberFactory::Instance();
+    //return BottleNumberFactory::Create(uiNew);
     /*switch (uiNew)
     {
         case 0:

@@ -13,8 +13,6 @@ class BottleNumber
     public:
         /** @brief Factory method to produce BottleNumber subclasses*/
         static std::unique_ptr<BottleNumber> For(const uint16_t uiNew);
-        /** @brief Method tp register a sub-class with the factory*/
-        static void Register(const uint16_t uiNew);
         /** Can't have a virtual function in the base class for this as it has to be static in the sub-classes.  This means the sub classes all differ in interface
          * from the base class, which seems wrong.  Perhaps it would be an idea to have the sub-classes also inherit from some other abstract class that defines the 
          * CreateMethod?
@@ -60,12 +58,15 @@ class BottleNumber
         friend std::ostream& operator << (std::ostream& o, const BottleNumber bottlenumber);
         /** @brief Converts BottleNumber to a string of number followed by container*/
         virtual std::string str() const; 
-
     protected:
         /** @brief Default Constructor is protected*/
         BottleNumber() {};
         uint16_t uiNumber;
         uint16_t uiMaxVerse;
+        /** @brief function pointer to factory method for dependency injection.
+         * 
+         * This static variable must be initialised in code elsewhere*/
+        static std::unique_ptr<BottleNumber> (* pFactory)(uint16_t);
 };
 
 #endif
