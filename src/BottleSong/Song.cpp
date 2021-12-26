@@ -13,6 +13,7 @@
  * is now given to the BottleNumber class via a static function pointer, so the BottleNumber class is no longer dependent on that factory class, rather it has 
  * dependency injection.  The setting up of that function pointer is also handled in BottleNumberFactory.cpp, so there is no code within BottleNumber.h or cpp
  * other than the code directly required for that class. 
+ * @version 0.09 Corrected some code comments
  * @todo Add tests for BottleNumber class
  */
 #include "Song.h"
@@ -44,10 +45,19 @@ static std::string Capitalise (std::string const text)
 std::string Song::verse(uint16_t uiVerse)
 {
     std::stringstream sOutput;
+    //Sketched pseudo-code for Chapter 8 - making verse open to different lyrics
+    //if (99 bottles song) {
     const std::unique_ptr<BottleNumber> bottleNumber = BottleNumber::For(uiVerse);
+    
     //Verse lines
-    sOutput << Capitalise (bottleNumber->str()) << " of beer on the wall, " << bottleNumber->str() << " of beer.\n";
-    sOutput << bottleNumber->Action() << bottleNumber->Successor()->str() << " of beer." << std::endl;
+    sOutput << Capitalise (bottleNumber->str()) << " of beer on the wall, ";
+    sOutput << bottleNumber->str() << " of beer.\n";
+    sOutput << bottleNumber->Action();
+    sOutput << bottleNumber->Successor()->str() << " of beer." << std::endl;
+    // }else if (that other song) {
+        //Get other thing object
+        //Assemble verse
+    //}
     return sOutput.str();
 }
 

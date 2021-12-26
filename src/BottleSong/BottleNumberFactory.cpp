@@ -49,7 +49,6 @@ BottleNumberFactory* BottleNumberFactory::Instance()
 
 std::unique_ptr<BottleNumber> BottleNumberFactory::Create (const uint16_t uiNewNumber)
 {
-    //CreateMethod method = BottleNumber(uiNewNumber);
     if (auto it = CreationMethods.find(uiNewNumber); it != CreationMethods.end())
     {
         return it->second(); //Call the CreateMethod

@@ -15,19 +15,22 @@ class BottleNumberFactory
 {
     public:
         using CreateMethod = std::unique_ptr<BottleNumber>(*)();
-
+        /** @brief Return a pointer to the instance of BottleNumberFactory*/
         static BottleNumberFactory* Instance();
-        /** @brief Called to register sub-classes
-         * @param[in] std::string - Text name of the class
+        /** @brief Called to register sub-classes by index number
+         * @param[in] uint16_t - Index number of the sub-class
          * @param[in] CreateMethod - Pointer to class's creation method
          * @return bool - true if successful*/
         static bool Register(const uint16_t, CreateMethod);
-        /** @brief Factory method to create a new BottleNumber
+        /** @brief Factory method to create a new BottleNumber for a given index number
+         * 
+         * If no specific subclass exists for the given index number the default BottleNumber class will be returned. 
          * @param[in] uint16_t - Bottle Number of new class
          * @return std::unique_ptr<BottleName> - newly created class*/
         static std::unique_ptr<BottleNumber>  Create (const uint16_t uiClassNumber);
     private:
         static BottleNumberFactory* pInstance; 
+        /** @brief Map of CreateMethods against index numbers*/
         static std::map <uint16_t, CreateMethod> CreationMethods;
 };
 
