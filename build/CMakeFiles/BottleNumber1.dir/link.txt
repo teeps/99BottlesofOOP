@@ -1,2 +1,0 @@
-/bin/x86_64-linux-gnu-ar qc libBottleNumber1.a CMakeFiles/BottleNumber1.dir/src/BottleSong/BottleNumber1.cpp.o
-/bin/x86_64-linux-gnu-ranlib libBottleNumber1.a
