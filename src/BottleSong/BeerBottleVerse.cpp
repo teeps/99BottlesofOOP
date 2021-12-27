@@ -16,10 +16,20 @@ static std::string Capitalise (std::string const text)
     return RetVal;
 }
 
-std::string BeerBottleVerse::lyric()
+/* std::string BeerBottleVerse::lyric()
 {
     std::stringstream sOutput;
     const std::unique_ptr<BottleNumber> bottleNumber = BottleNumber::For(uiVerseNumber);
+    //Verse lines
+    sOutput << Capitalise (bottleNumber->str()) << " of beer on the wall, " << bottleNumber->str() << " of beer.\n";
+    sOutput << bottleNumber->Action() << bottleNumber->Successor()->str() << " of beer." << std::endl;
+    return sOutput.str();
+}
+ */
+std::string BeerBottleVerse::lyric(uint16_t uiVerse)
+{
+    std::stringstream sOutput;
+    const std::unique_ptr<BottleNumber> bottleNumber = BottleNumber::For(uiVerse);
     //Verse lines
     sOutput << Capitalise (bottleNumber->str()) << " of beer on the wall, " << bottleNumber->str() << " of beer.\n";
     sOutput << bottleNumber->Action() << bottleNumber->Successor()->str() << " of beer." << std::endl;

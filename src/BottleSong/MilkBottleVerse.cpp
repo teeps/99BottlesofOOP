@@ -16,7 +16,7 @@ static std::string Capitalise (std::string const text)
     return RetVal;
 }
 
-std::string MilkBottleVerse::lyric()
+/* std::string MilkBottleVerse::lyric()
 {
     std::stringstream sOutput;
     const std::unique_ptr<BottleNumber> bottleNumber = BottleNumber::For(uiVerseNumber);
@@ -24,9 +24,19 @@ std::string MilkBottleVerse::lyric()
     sOutput << Capitalise (bottleNumber->str()) << " of milk on the wall, " << bottleNumber->str() << " of milk.\n";
     sOutput << bottleNumber->Action() << bottleNumber->Successor()->str() << " of milk." << std::endl;
     return sOutput.str();
+} */
+
+std::string MilkBottleVerse::lyric(uint16_t uiVerse)
+{
+    std::stringstream sOutput;
+    const std::unique_ptr<BottleNumber> bottleNumber = BottleNumber::For(uiVerse);
+    //Verse lines
+    sOutput << Capitalise (bottleNumber->str()) << " of milk on the wall, " << bottleNumber->str() << " of milk.\n";
+    sOutput << bottleNumber->Action() << bottleNumber->Successor()->str() << " of milk." << std::endl;
+    return sOutput.str();
 }
 
-std::unique_ptr<VerseTemplate> MilkBottleVerse::CreateMethod(uint16_t uiNumber)
+std::unique_ptr<VerseTemplate> MilkBottleVerse::CreateMethod()
 {
-    return std::make_unique<MilkBottleVerse> (MilkBottleVerse(uiNumber));
+    return std::make_unique<MilkBottleVerse> (MilkBottleVerse());
 }

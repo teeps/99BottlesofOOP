@@ -15,8 +15,15 @@ class Song
     public:
         /** @brief Default Constructor, defaults to standard 99 bottles of beer song*/
         Song();
-        /** @brief Constructor with verse template string*/
+        /** @brief Constructor with verse template string
+         * @param[in] const char * - text matching somehting in the factory
+        */
         Song(const char *);
+        /** @brief Constructor with lyric function pointer
+         * @param[in] std::string (*)(uint16_t)
+        */
+        //Song(std::shared_ptr<std::string (*)(uint16_t)> pfLyricFunction) {pfLyric = pfLyricFunction;};
+        Song(VerseTemplate* pfTemplate) {pfVerseTemplate = pfTemplate;};
         /** @brief Constructor with arguments
          * @param[in] const std::weak_ptr<VerseTemplate> - Verse template
          * @param[in] uint16_t - max verses
@@ -45,6 +52,9 @@ class Song
     private:
         /** @brief Function pointer for verse template constructor*/ 
         VerseTemplate* (* pfVerse)(uint16_t);
+        /** @brief Function pointer for some lyric method*/
+//        std::shared_ptr<std::string (*)(uint16_t)> pfLyric;
+        VerseTemplate * pfVerseTemplate;
         std::string VerseType;
 };
 

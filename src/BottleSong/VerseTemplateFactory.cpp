@@ -38,11 +38,11 @@ VerseTemplateFactory* VerseTemplateFactory::Instance()
     return pInstance;
 }
 
-std::unique_ptr<VerseTemplate> VerseTemplateFactory::Create (const std::string & IndexString, uint16_t uiVerseNumber)
+std::unique_ptr<VerseTemplate> VerseTemplateFactory::Create (const std::string & IndexString)
 {
     if (auto it = CreationMethods.find(IndexString); it != CreationMethods.end())
     {
-        return it->second(uiVerseNumber); //Call the CreateMethod
+        return it->second(); //Call the CreateMethod
     }
-    return std::make_unique<BeerBottleVerse>(BeerBottleVerse(uiVerseNumber));
+    return std::make_unique<BeerBottleVerse>(BeerBottleVerse());
 }

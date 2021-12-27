@@ -150,6 +150,11 @@
 			},
 			{
 				"backtrace" : 2,
+				"fragment" : "../libMilkBottleVerse.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
 				"fragment" : "../libCapitaliser.a",
 				"role" : "libraries"
 			},
@@ -158,6 +163,7 @@
 				"role" : "libraries"
 			},
 			{
+				"backtrace" : 2,
 				"fragment" : "../libMilkBottleVerse.a",
 				"role" : "libraries"
 			},

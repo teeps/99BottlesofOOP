@@ -7,6 +7,7 @@
 #include "../src/BottleSong/BottleNumber0.h"
 #include "../src/BottleSong/BottleNumber1.h"
 #include "../src/BottleSong/BottleNumber6.h"
+#include "../src/BottleSong/MilkBottleVerse.h"
 #include <string>
 using namespace Catch::Matchers;
 
@@ -15,12 +16,11 @@ TEST_CASE ( "BottleSong")
   SECTION( "Song Constructors")
   {
     Song BeerSong = Song();
-    Song MilkSong = Song("Milk");
   }
   SECTION ( "VerseText_2Bottles") 
   {
     const char * expected = "2 bottles of beer on the wall, 2 bottles of beer.\nTake one down and pass it around, 1 bottle of beer.\n";
-    Song song;;
+    Song song;
     
     REQUIRE_THAT (song.verse(2).c_str(), Equals (expected));
   }
@@ -81,13 +81,14 @@ TEST_CASE ("BottleNumber")
   }
 }
 
-TEST_CASE ("MilkBottleVerse")
+TEST_CASE ("MilkBottleVerse - Law Of Demeter")
 {
 
   SECTION ( "VerseText_1Bottles") 
   {
     const char * expected = "1 bottle of milk on the wall, 1 bottle of milk.\nTake it down and pass it around, no more bottles of milk.\n";
-    Song song=Song("Milk");
+    MilkBottleVerse Verse;
+    Song song=Song(&Verse);
     
     REQUIRE_THAT (song.verse(1).c_str(), Equals (expected));
   }

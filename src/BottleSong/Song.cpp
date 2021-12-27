@@ -33,6 +33,7 @@ Song::Song ()
      the song's job to do this.  So, these lines are moved to application code for now, e.g. in some sort of init sequence*/ 
     //std::shared_ptr<BottleNumberFactory> pFactory = std::make_shared<BottleNumberFactory>(BottleNumberFactory());
     VerseType="";  
+    pfVerseTemplate = new BeerBottleVerse();
 };
 
 Song::Song (const char * pVerseType)
@@ -65,9 +66,13 @@ std::string Song::verse(uint16_t uiVerse)
      * the way the code is currently you would have to fake two things, the VerseTemplate class and the lyric method.  If we were able to directly inject 
      * an instance of some newLyric() method instead of a class or instance of a class we could just fake the one thing.  In this case the return line would be:
      * return pfLyric(uiVerse);
-     * */   
-    std::unique_ptr<VerseTemplate> pNewVerse = VerseTemplateFactory::Create(VerseType,uiVerse); //Factory allows for different lyrics
-    return pNewVerse->lyric();
+     * */
+    if (pfVerseTemplate != nullptr)
+        return pfVerseTemplate->lyric(uiVerse);   
+    //std::unique_ptr<VerseTemplate> pNewVerse = VerseTemplateFactory::Create(VerseType); //Factory allows for different lyrics
+    //if (pNewVerse != nullptr)
+    //    return pNewVerse->lyric(uiVerse);
+    return "nullptr";
 }
 
 std::string Song::verses(uint16_t uiHighVerse, uint16_t uiLowVerse)

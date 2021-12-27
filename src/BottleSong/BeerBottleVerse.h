@@ -10,12 +10,13 @@
 class BeerBottleVerse: public VerseTemplate
 {
     public:
-        // @brief Default Constructor with initializer list*/
-        BeerBottleVerse(uint16_t uiVerseIndex) : uiVerseNumber(uiVerseIndex) {}; 
+        //Law of demeter changes
+        // @brief Default Constructor */
+        BeerBottleVerse() {}; 
         /** @brief Return the verse lyric for the given number
          * @param[in] uint16_t - Verse Number
          * @returns std::string*/ 
-        std::string lyric();
+        std::string lyric(uint16_t);
     private:
         uint16_t uiVerseNumber;
 };

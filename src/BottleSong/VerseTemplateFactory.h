@@ -8,7 +8,7 @@
 class VerseTemplateFactory
 {
     public:
-        using CreateMethod = std::unique_ptr<VerseTemplate>(*)(uint16_t);
+        using CreateMethod = std::unique_ptr<VerseTemplate>(*)();
         /** @brief Return a pointer to the instance of BottleNumberFactory*/
         static VerseTemplateFactory* Instance();
         /** @brief Called to register sub-classes by identifying string
@@ -21,7 +21,7 @@ class VerseTemplateFactory
          * If no specific subclass exists for the given string the default BeerBottleVerse class will be returned. 
          * @param[in] std::string & - Index string of new class
          * @return std::unique_ptr<VerseTemplate> - newly created class*/
-        static std::unique_ptr<VerseTemplate>  Create (const std::string &, const uint16_t);
+        static std::unique_ptr<VerseTemplate>  Create (const std::string &);
     private:
         static VerseTemplateFactory* pInstance; 
         /** @brief Map of CreateMethods against index numbers*/

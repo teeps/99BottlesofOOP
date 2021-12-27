@@ -21,6 +21,7 @@ target_link_libraries(${TARGET_TEST}
     BottleNumber1
     BottleNumber6
     BottleNumberFactory
+    MilkBottleVerse
     Capitaliser
 )
 include(CTest)

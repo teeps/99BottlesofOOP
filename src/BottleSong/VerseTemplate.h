@@ -9,16 +9,16 @@
 class VerseTemplate
 {
     public:
-        /** @brief Constructor called with a single parameter, the verse number
-         * @param[in] uint16_t - Verse Number
-        */
-        VerseTemplate(uint16_t) {};
-        /** @brief Return the verse lyric for the given number
-         * @returns std::string*/ 
-        virtual std::string lyric() {return "";}/* =0 */;
-    protected:
-        /** @brief Default Constructor not allowed*/
+//Law of demeter changes
+        /** @brief Default Constructor allowed*/
         VerseTemplate() {};
+
+        /** @brief Return the verse lyric for the given number
+         * @param[in] uint16_t - verse number
+         * @returns std::string*/ 
+        virtual std::string lyric(uint16_t) {return "template";}/* =0 */;
+    protected:
+        
 };
 
 #endif
