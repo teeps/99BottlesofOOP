@@ -66,6 +66,24 @@ cstdint
 iostream
 -
 
+/home/mark/Documents/CProjects/99Bottles/src/Capitaliser/Capitaliser.h
+iostream
+-
+sstream
+-
+
+/home/mark/Documents/CProjects/99Bottles/tests/CapitaliserTests.cpp
+catch.hpp
+/home/mark/Documents/CProjects/99Bottles/tests/catch.hpp
+../src/Capitaliser/Capitaliser.h
+/home/mark/Documents/CProjects/99Bottles/src/Capitaliser/Capitaliser.h
+string
+-
+iostream
+-
+sstream
+-
+
 /home/mark/Documents/CProjects/99Bottles/tests/catch.hpp
 TargetConditionals.h
 -
@@ -675,4 +693,8 @@ catch.hpp
 /home/mark/Documents/CProjects/99Bottles/src/BottleSong/BottleNumber6.h
 string
 -
+
+/home/mark/Documents/CProjects/99Bottles/tests/tests_main.cpp
+catch.hpp
+/home/mark/Documents/CProjects/99Bottles/tests/catch.hpp
 

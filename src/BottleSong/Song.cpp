@@ -53,7 +53,19 @@ static std::string Capitalise (std::string const text)
 
 std::string Song::verse(uint16_t uiVerse)
 {
-    std::stringstream sOutput;
+    /** According to the book the section below breaks the law of demeter because:
+     * a) We're making this class need know two things: first that it can construct a new VerseTemplate, and second that it can then call lyric on that 
+     * b) We should have injected an instance, not a  class (or factory as we have done here)
+     * I don't get why this is a problem in this case - I created VerseTemplate to define precisely this interface so isn't that OK?  We're not descending
+     * some massive tree of dependencies here, we're just calling a method in the defined interface.  Martin Reddy apparently states the law as,
+     * "You should never call a function on an object that you obtained via another function call."  So I guess here our first function call is to the 
+     * constructor, and our second is to lyric.  I still don't see this as problematic in this case though.
+     * 
+     * One argument is about unit testing - imagine if lyric() was computationally expensive so that you wanted to fake it for testing, 
+     * the way the code is currently you would have to fake two things, the VerseTemplate class and the lyric method.  If we were able to directly inject 
+     * an instance of some newLyric() method instead of a class or instance of a class we could just fake the one thing.  In this case the return line would be:
+     * return pfLyric(uiVerse);
+     * */   
     std::unique_ptr<VerseTemplate> pNewVerse = VerseTemplateFactory::Create(VerseType,uiVerse); //Factory allows for different lyrics
     return pNewVerse->lyric();
 }
