@@ -15,4 +15,5 @@ so all the application specific initialisation of the factory is in the one plac
 is now given to the BottleNumber class via a static function pointer, so the BottleNumber class is no longer dependent on that factory class, rather it has 
 dependency injection.  The setting up of that function pointer is also handled in BottleNumberFactory.cpp, so there is no code within BottleNumber.h or cpp
 other than the code directly required for that class. 
-\version 0.09 Corrected some code comments
+\version 0.09 Corrected some code comments. Modified to deal with the 'law of demeter' violation, although I don't agree that this made things any better!
+
