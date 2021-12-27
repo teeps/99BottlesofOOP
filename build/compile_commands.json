@@ -1,0 +1,72 @@
+[
+{
+  "directory": "/home/mark/Documents/CProjects/99Bottles/build",
+  "command": "/bin/x86_64-linux-gnu-g++-10   -g -std=gnu++17 -o CMakeFiles/Capitaliser.dir/src/Capitaliser/Capitaliser.cpp.o -c /home/mark/Documents/CProjects/99Bottles/src/Capitaliser/Capitaliser.cpp",
+  "file": "/home/mark/Documents/CProjects/99Bottles/src/Capitaliser/Capitaliser.cpp"
+},
+{
+  "directory": "/home/mark/Documents/CProjects/99Bottles/build",
+  "command": "/bin/x86_64-linux-gnu-g++-10   -g -std=gnu++17 -o CMakeFiles/MilkBottleVerse.dir/src/BottleSong/MilkBottleVerse.cpp.o -c /home/mark/Documents/CProjects/99Bottles/src/BottleSong/MilkBottleVerse.cpp",
+  "file": "/home/mark/Documents/CProjects/99Bottles/src/BottleSong/MilkBottleVerse.cpp"
+},
+{
+  "directory": "/home/mark/Documents/CProjects/99Bottles/build",
+  "command": "/bin/x86_64-linux-gnu-g++-10   -g -std=gnu++17 -o CMakeFiles/BottleNumber1.dir/src/BottleSong/BottleNumber1.cpp.o -c /home/mark/Documents/CProjects/99Bottles/src/BottleSong/BottleNumber1.cpp",
+  "file": "/home/mark/Documents/CProjects/99Bottles/src/BottleSong/BottleNumber1.cpp"
+},
+{
+  "directory": "/home/mark/Documents/CProjects/99Bottles/build",
+  "command": "/bin/x86_64-linux-gnu-g++-10 -DTEST_DATA_PATH=\\\"src/data\\\" -I/home/mark/Documents/CProjects/99Bottles/src -g -std=gnu++17 -o CMakeFiles/99Bottles.dir/src/99bottles.cpp.o -c /home/mark/Documents/CProjects/99Bottles/src/99bottles.cpp",
+  "file": "/home/mark/Documents/CProjects/99Bottles/src/99bottles.cpp"
+},
+{
+  "directory": "/home/mark/Documents/CProjects/99Bottles/build",
+  "command": "/bin/x86_64-linux-gnu-g++-10   -g -std=gnu++17 -o CMakeFiles/Song.dir/src/BottleSong/Song.cpp.o -c /home/mark/Documents/CProjects/99Bottles/src/BottleSong/Song.cpp",
+  "file": "/home/mark/Documents/CProjects/99Bottles/src/BottleSong/Song.cpp"
+},
+{
+  "directory": "/home/mark/Documents/CProjects/99Bottles/build",
+  "command": "/bin/x86_64-linux-gnu-g++-10   -g -std=gnu++17 -o CMakeFiles/VerseFactory.dir/src/BottleSong/VerseTemplateFactory.cpp.o -c /home/mark/Documents/CProjects/99Bottles/src/BottleSong/VerseTemplateFactory.cpp",
+  "file": "/home/mark/Documents/CProjects/99Bottles/src/BottleSong/VerseTemplateFactory.cpp"
+},
+{
+  "directory": "/home/mark/Documents/CProjects/99Bottles/build",
+  "command": "/bin/x86_64-linux-gnu-g++-10   -g -std=gnu++17 -o CMakeFiles/BeerBottleVerse.dir/src/BottleSong/BeerBottleVerse.cpp.o -c /home/mark/Documents/CProjects/99Bottles/src/BottleSong/BeerBottleVerse.cpp",
+  "file": "/home/mark/Documents/CProjects/99Bottles/src/BottleSong/BeerBottleVerse.cpp"
+},
+{
+  "directory": "/home/mark/Documents/CProjects/99Bottles/build",
+  "command": "/bin/x86_64-linux-gnu-g++-10   -g -std=gnu++17 -o CMakeFiles/BottleNumberFactory.dir/src/BottleSong/BottleNumberFactory.cpp.o -c /home/mark/Documents/CProjects/99Bottles/src/BottleSong/BottleNumberFactory.cpp",
+  "file": "/home/mark/Documents/CProjects/99Bottles/src/BottleSong/BottleNumberFactory.cpp"
+},
+{
+  "directory": "/home/mark/Documents/CProjects/99Bottles/build",
+  "command": "/bin/x86_64-linux-gnu-g++-10   -g -std=gnu++17 -o CMakeFiles/BottleNumber6.dir/src/BottleSong/BottleNumber6.cpp.o -c /home/mark/Documents/CProjects/99Bottles/src/BottleSong/BottleNumber6.cpp",
+  "file": "/home/mark/Documents/CProjects/99Bottles/src/BottleSong/BottleNumber6.cpp"
+},
+{
+  "directory": "/home/mark/Documents/CProjects/99Bottles/build",
+  "command": "/bin/x86_64-linux-gnu-g++-10   -g -std=gnu++17 -o CMakeFiles/BottleNumber0.dir/src/BottleSong/BottleNumber0.cpp.o -c /home/mark/Documents/CProjects/99Bottles/src/BottleSong/BottleNumber0.cpp",
+  "file": "/home/mark/Documents/CProjects/99Bottles/src/BottleSong/BottleNumber0.cpp"
+},
+{
+  "directory": "/home/mark/Documents/CProjects/99Bottles/build",
+  "command": "/bin/x86_64-linux-gnu-g++-10   -g -std=gnu++17 -o CMakeFiles/BottleNumber.dir/src/BottleSong/BottleNumber.cpp.o -c /home/mark/Documents/CProjects/99Bottles/src/BottleSong/BottleNumber.cpp",
+  "file": "/home/mark/Documents/CProjects/99Bottles/src/BottleSong/BottleNumber.cpp"
+},
+{
+  "directory": "/home/mark/Documents/CProjects/99Bottles/build/tests",
+  "command": "/bin/x86_64-linux-gnu-g++-10   -g -std=gnu++17 -o CMakeFiles/99BottlesTest.dir/CapitaliserTests.cpp.o -c /home/mark/Documents/CProjects/99Bottles/tests/CapitaliserTests.cpp",
+  "file": "/home/mark/Documents/CProjects/99Bottles/tests/CapitaliserTests.cpp"
+},
+{
+  "directory": "/home/mark/Documents/CProjects/99Bottles/build/tests",
+  "command": "/bin/x86_64-linux-gnu-g++-10   -g -std=gnu++17 -o CMakeFiles/99BottlesTest.dir/tests.cpp.o -c /home/mark/Documents/CProjects/99Bottles/tests/tests.cpp",
+  "file": "/home/mark/Documents/CProjects/99Bottles/tests/tests.cpp"
+},
+{
+  "directory": "/home/mark/Documents/CProjects/99Bottles/build/tests",
+  "command": "/bin/x86_64-linux-gnu-g++-10   -g -std=gnu++17 -o CMakeFiles/99BottlesTest.dir/tests_main.cpp.o -c /home/mark/Documents/CProjects/99Bottles/tests/tests_main.cpp",
+  "file": "/home/mark/Documents/CProjects/99Bottles/tests/tests_main.cpp"
+}
+]

@@ -1,0 +1,2 @@
+/bin/x86_64-linux-gnu-ar qc libCapitaliser.a CMakeFiles/Capitaliser.dir/src/Capitaliser/Capitaliser.cpp.o
+/bin/x86_64-linux-gnu-ranlib libCapitaliser.a

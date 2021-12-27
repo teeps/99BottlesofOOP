@@ -24,7 +24,17 @@ target_link_libraries(BottleNumberFactory
     BottleNumber0
     BottleNumber1
     BottleNumber6)
+add_library (BeerBottleVerse "${PROJECT_SOURCE_DIR}/BottleSong/BeerBottleVerse.cpp")
+add_library (MilkBottleVerse "${PROJECT_SOURCE_DIR}/BottleSong/MilkBottleVerse.cpp")
+add_library (VerseFactory "${PROJECT_SOURCE_DIR}/BottleSong/VerseTemplateFactory.cpp")
+target_link_libraries(VerseFactory
+    BeerBottleVerse
+    MilkBottleVerse)   
 add_library (Song "${PROJECT_SOURCE_DIR}/BottleSong/Song.cpp")
+target_link_libraries(Song
+    MilkBottleVerse
+    BeerBottleVerse
+    VerseFactory)
 add_library (Capitaliser "${PROJECT_SOURCE_DIR}/Capitaliser/Capitaliser.cpp")
 #add the executable
 add_executable(99Bottles ${PROJECT_SOURCE_DIR}/99bottles.cpp)

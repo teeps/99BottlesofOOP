@@ -12,6 +12,11 @@ using namespace Catch::Matchers;
 
 TEST_CASE ( "BottleSong") 
 {
+  SECTION( "Song Constructors")
+  {
+    Song BeerSong = Song();
+    Song MilkSong = Song("Milk");
+  }
   SECTION ( "VerseText_2Bottles") 
   {
     const char * expected = "2 bottles of beer on the wall, 2 bottles of beer.\nTake one down and pass it around, 1 bottle of beer.\n";
@@ -76,7 +81,14 @@ TEST_CASE ("BottleNumber")
   }
 }
 
-TEST_CASE ("BeerBottleVerse")
+TEST_CASE ("MilkBottleVerse")
 {
 
+  SECTION ( "VerseText_1Bottles") 
+  {
+    const char * expected = "1 bottle of milk on the wall, 1 bottle of milk.\nTake it down and pass it around, no more bottles of milk.\n";
+    Song song=Song("Milk");
+    
+    REQUIRE_THAT (song.verse(1).c_str(), Equals (expected));
+  }
 }
