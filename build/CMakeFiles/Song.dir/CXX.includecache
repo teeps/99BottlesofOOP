@@ -6,14 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/mark/Documents/CProjects/99Bottles/src/BottleSong/BeerBottleVerse.h
-cstdint
--
-iostream
--
-VerseTemplate.h
-/home/mark/Documents/CProjects/99Bottles/src/BottleSong/VerseTemplate.h
-
 /home/mark/Documents/CProjects/99Bottles/src/BottleSong/Song.cpp
 Song.h
 /home/mark/Documents/CProjects/99Bottles/src/BottleSong/Song.h
@@ -23,10 +15,6 @@ iostream
 -
 sstream
 -
-BeerBottleVerse.h
-/home/mark/Documents/CProjects/99Bottles/src/BottleSong/BeerBottleVerse.h
-VerseTemplateFactory.h
-/home/mark/Documents/CProjects/99Bottles/src/BottleSong/VerseTemplateFactory.h
 
 /home/mark/Documents/CProjects/99Bottles/src/BottleSong/Song.h
 cstdint
@@ -42,13 +30,5 @@ VerseTemplate.h
 cstdint
 -
 iostream
--
-
-/home/mark/Documents/CProjects/99Bottles/src/BottleSong/VerseTemplateFactory.h
-VerseTemplate.h
-/home/mark/Documents/CProjects/99Bottles/src/BottleSong/VerseTemplate.h
-memory
--
-map
 -
 

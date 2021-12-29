@@ -1,3 +1,22 @@
-Start testing: Dec 27 09:23 GMT
+Start testing: Dec 29 10:07 GMT
 ----------------------------------------------------------
-End testing: Dec 27 09:23 GMT
+4/4 Testing: MilkBottleVerse - Law Of Demeter
+4/4 Test: MilkBottleVerse - Law Of Demeter
+Command: "/home/mark/Documents/CProjects/99Bottles/build/tests/99BottlesTest" "MilkBottleVerse - Law Of Demeter"
+Directory: /home/mark/Documents/CProjects/99Bottles/build/tests
+"MilkBottleVerse - Law Of Demeter" start time: Dec 29 10:07 GMT
+Output:
+----------------------------------------------------------
+Filters: MilkBottleVerse - Law Of Demeter
+===============================================================================
+All tests passed (1 assertion in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"MilkBottleVerse - Law Of Demeter" end time: Dec 29 10:07 GMT
+"MilkBottleVerse - Law Of Demeter" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Dec 29 10:07 GMT

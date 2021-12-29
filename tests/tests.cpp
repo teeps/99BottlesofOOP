@@ -8,6 +8,7 @@
 #include "../src/BottleSong/BottleNumber1.h"
 #include "../src/BottleSong/BottleNumber6.h"
 #include "../src/BottleSong/MilkBottleVerse.h"
+#include "../src/BottleSong/BeerBottleVerse.h"
 #include <string>
 using namespace Catch::Matchers;
 
@@ -15,12 +16,17 @@ TEST_CASE ( "BottleSong")
 {
   SECTION( "Song Constructors")
   {
-    Song BeerSong = Song();
+    BeerBottleVerse BeerVerse;
+    Song BeerSong = Song(std::make_shared<BeerBottleVerse>(BeerVerse));
+    MilkBottleVerse MilkVerse;
+    Song MilkSong = Song(std::make_shared<MilkBottleVerse>(MilkVerse));
+    
   }
   SECTION ( "VerseText_2Bottles") 
   {
     const char * expected = "2 bottles of beer on the wall, 2 bottles of beer.\nTake one down and pass it around, 1 bottle of beer.\n";
-    Song song;
+    BeerBottleVerse BeerVerse;
+    Song song = Song(std::make_shared<BeerBottleVerse>(BeerVerse));
     
     REQUIRE_THAT (song.verse(2).c_str(), Equals (expected));
   }
@@ -28,7 +34,8 @@ TEST_CASE ( "BottleSong")
   SECTION ( "VerseText_1Bottles") 
   {
     const char * expected = "1 bottle of beer on the wall, 1 bottle of beer.\nTake it down and pass it around, no more bottles of beer.\n";
-    Song song;;
+    BeerBottleVerse BeerVerse;
+    Song song = Song(std::make_shared<BeerBottleVerse>(BeerVerse));
     
     REQUIRE_THAT (song.verse(1).c_str(), Equals (expected));
   }
@@ -36,7 +43,8 @@ TEST_CASE ( "BottleSong")
   SECTION ( "VerseText_0Bottles") 
   {
     const char * expected = "No more bottles of beer on the wall, no more bottles of beer.\nGo to the store and buy some more, 99 bottles of beer.\n";
-    Song song;;
+    BeerBottleVerse BeerVerse;
+    Song song = Song(std::make_shared<BeerBottleVerse>(BeerVerse));
     
     REQUIRE_THAT (song.verse(0).c_str(), Equals (expected));
   }
@@ -44,7 +52,8 @@ TEST_CASE ( "BottleSong")
   SECTION ("Verse Text - 6 Bottles with six-pack requirement")
   {
     const char * expected = "1 six-pack of beer on the wall, 1 six-pack of beer.\nTake one down and pass it around, 5 bottles of beer.\n";
-    Song song;;
+    BeerBottleVerse BeerVerse;
+    Song song = Song(std::make_shared<BeerBottleVerse>(BeerVerse));
     
     REQUIRE_THAT (song.verse(6).c_str(), Equals (expected));
   }
@@ -52,7 +61,8 @@ TEST_CASE ( "BottleSong")
   SECTION ("Verse Text - 7 Bottles with six-pack requirement")
   {
     const char * expected = "7 bottles of beer on the wall, 7 bottles of beer.\nTake one down and pass it around, 1 six-pack of beer.\n";
-    Song song;;
+    BeerBottleVerse BeerVerse;
+    Song song = Song(std::make_shared<BeerBottleVerse>(BeerVerse));
     
     REQUIRE_THAT (song.verse(7).c_str(), Equals (expected));
   }
@@ -88,7 +98,7 @@ TEST_CASE ("MilkBottleVerse - Law Of Demeter")
   {
     const char * expected = "1 bottle of milk on the wall, 1 bottle of milk.\nTake it down and pass it around, no more bottles of milk.\n";
     MilkBottleVerse Verse;
-    Song song=Song(&Verse);
+    Song song=Song(std::make_shared<MilkBottleVerse>(Verse));
     
     REQUIRE_THAT (song.verse(1).c_str(), Equals (expected));
   }

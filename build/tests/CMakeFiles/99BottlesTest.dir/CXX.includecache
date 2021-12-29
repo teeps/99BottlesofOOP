@@ -6,6 +6,14 @@
 
 #IncludeRegexTransform: 
 
+/home/mark/Documents/CProjects/99Bottles/src/BottleSong/BeerBottleVerse.h
+cstdint
+-
+iostream
+-
+VerseTemplate.h
+/home/mark/Documents/CProjects/99Bottles/src/BottleSong/VerseTemplate.h
+
 /home/mark/Documents/CProjects/99Bottles/src/BottleSong/BottleNumber.h
 cstdint
 -
@@ -685,6 +693,8 @@ catch.hpp
 /home/mark/Documents/CProjects/99Bottles/src/BottleSong/BottleNumber6.h
 ../src/BottleSong/MilkBottleVerse.h
 /home/mark/Documents/CProjects/99Bottles/src/BottleSong/MilkBottleVerse.h
+../src/BottleSong/BeerBottleVerse.h
+/home/mark/Documents/CProjects/99Bottles/src/BottleSong/BeerBottleVerse.h
 string
 -
 

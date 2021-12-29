@@ -21,29 +21,6 @@
 #include <stdio.h>
 #include <iostream>
 #include <sstream>
-#include "BeerBottleVerse.h"
-#include "VerseTemplateFactory.h"
-
-Song::Song ()
-{
-    /*Register the sub-classes in the factory.  This has to be done after Instancing the Factory to avoid the problem with undefined initialisation 
-     *order of statics.  Once Instanced the rest of the code can happily use the static methods.
-     *What happens if multiple Songs are created though?  Well, the BottleNumberFactory will only register them the first time, so as long as
-     there's not some other class which is going to make use of the Factory this registration is OK here.  Still feels wrong though as it is not really 
-     the song's job to do this.  So, these lines are moved to application code for now, e.g. in some sort of init sequence*/ 
-    //std::shared_ptr<BottleNumberFactory> pFactory = std::make_shared<BottleNumberFactory>(BottleNumberFactory());
-    VerseType="";  
-    pfVerseTemplate = new BeerBottleVerse();
-};
-
-Song::Song (const char * pVerseType)
-{
-    VerseType = std::string(pVerseType);
-};
-/** @brief Capitalise the first letter of a string
- * @param[in] std::string - source
- * @returns std::string
- */
 
 static std::string Capitalise (std::string const text)
 {
@@ -67,11 +44,10 @@ std::string Song::verse(uint16_t uiVerse)
      * an instance of some newLyric() method instead of a class or instance of a class we could just fake the one thing.  In this case the return line would be:
      * return pfLyric(uiVerse);
      * */
-    if (pfVerseTemplate != nullptr)
-        return pfVerseTemplate->lyric(uiVerse);   
-    //std::unique_ptr<VerseTemplate> pNewVerse = VerseTemplateFactory::Create(VerseType); //Factory allows for different lyrics
-    //if (pNewVerse != nullptr)
-    //    return pNewVerse->lyric(uiVerse);
+    if (pVerseTemplate != nullptr)
+    {
+        return pVerseTemplate->lyric(uiVerse);   
+    }
     return "nullptr";
 }
 

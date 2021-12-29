@@ -16,4 +16,5 @@ is now given to the BottleNumber class via a static function pointer, so the Bot
 dependency injection.  The setting up of that function pointer is also handled in BottleNumberFactory.cpp, so there is no code within BottleNumber.h or cpp
 other than the code directly required for that class. 
 - @version 0.09 Corrected some code comments. Modified to deal with the 'law of demeter' violation, although I don't agree that this made things any better!
+- @version 0.10 Updated to be better (more sane) law of demeter follower - Song is now constructed passing a smart pointer to a VerseTemplate instance, and a method of that instance is called when building the verses.  The VerseTemplate factory is not really needed any more, but might come in useful in the future so is still present.
 
